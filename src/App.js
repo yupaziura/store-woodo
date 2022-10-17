@@ -42,11 +42,11 @@ function App() {
 
 
     <Router>
-    {/* <DialogWindow show={show} 
+    <DialogWindow show={show} 
                   setShow={setShow} 
                   setRootId={setRootId}
                   rootId={rootId}
-/>   */}
+/>  
 
       <div className="App">
 

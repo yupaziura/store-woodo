@@ -9,3 +9,7 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  margin: 10px;
+}
+
