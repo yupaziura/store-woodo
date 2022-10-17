@@ -5,10 +5,8 @@ const Header = () => {
     return (
         <>
             <Link to="/">Main</Link>
-            <NavLink>
-                <Link to="/catalog">Catalog</Link>
-                <Link to="/contacts">Contacts</Link>
-            </NavLink>
+                <NavLink to="/catalog">Catalog</NavLink>
+                <NavLink to="/contacts">Contacts</NavLink>
         </>
     )
 }
