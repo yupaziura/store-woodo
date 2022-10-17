@@ -1,5 +1,5 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 
 import Header from './components/Header/Header';
 import MainPage from './components/pages/MainPage/MainPage';
@@ -7,9 +7,7 @@ import CatalogPage from './components/pages/CatalogPage/CatalogPage';
 import Contacts from './components/pages/Contacts/Contacts';
 import SingleCatalogPage from './components/pages/SingleCatalogPage/SingleCatalogPage';
 import SingleProductPage from './components/pages/SingleProductPage/SingleProductPage';
-
-
-
+import DialogWindow from './components/DialogWindow/DialogWindow';
 
 
 import './App.css';
@@ -19,12 +17,29 @@ function App() {
   const [rootType, setRootType] = useState('armchair');
   const [rootId, setRootId] = useState('0');
 
+  const [show, setShow] = useState(false);
+
+  
+
+  useEffect(()=>{
+    setTimeout(()=> {
+      setShow(true)
+    })
+  },[])
+
 
   return (
+    <>
+    <DialogWindow show={show} setShow={setShow}/>
+
     <Router>
+
       <div className="App">
+
         <Header/>
-        <div className="">
+
+
+         <div className="">
           <Routes>
             <Route path='/' element={<MainPage/>}/>
             <Route path='/catalog' element={<CatalogPage setRootType={setRootType}/>}/>
@@ -39,6 +54,7 @@ function App() {
         </div>
       </div>
     </Router>
+    </>
   );
 }
 
