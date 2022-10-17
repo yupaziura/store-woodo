@@ -1,14 +1,17 @@
 import { products } from "../../../db/products";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const SingleProductPage = ({rootType, rootId}) => {
+
+    const {type, id} = useParams();
+    console.log(type, id)
     return (
 
         <>
-        <Link to={`/catalog/${rootType}`}> Back to catalog</Link>
-        <p>{products[rootType][rootId].name}</p>
-        <p>{products[rootType][rootId].descr}</p>
-        <p>{products[rootType][rootId].price}</p>
+        <Link to={`/catalog/armchairs`}> Back to catalog</Link>
+        <p>{products[type][id].name}</p>
+        <p>{products[type][id].descr}</p>
+        <p>{products[type][id].price}</p>
 
         </>
     )

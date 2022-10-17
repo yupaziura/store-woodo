@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes, useParams} from 'react-router-dom';
 import {useEffect, useState} from 'react';
 
 import Header from './components/Header/Header';
@@ -8,6 +8,8 @@ import Contacts from './components/pages/Contacts/Contacts';
 import SingleCatalogPage from './components/pages/SingleCatalogPage/SingleCatalogPage';
 import SingleProductPage from './components/pages/SingleProductPage/SingleProductPage';
 import DialogWindow from './components/DialogWindow/DialogWindow';
+import ErrorPage from './components/pages/ErrorPage/ErrorPage';
+
 
 
 import './App.css';
@@ -19,7 +21,14 @@ function App() {
 
   const [show, setShow] = useState(false);
 
-  
+
+
+
+   
+
+
+
+  // const constrPath = `${}`
 
   useEffect(()=>{
     setTimeout(()=> {
@@ -30,9 +39,14 @@ function App() {
 
   return (
     <>
-    <DialogWindow show={show} setShow={setShow}/>
+
 
     <Router>
+    {/* <DialogWindow show={show} 
+                  setShow={setShow} 
+                  setRootId={setRootId}
+                  rootId={rootId}
+/>   */}
 
       <div className="App">
 
@@ -49,7 +63,8 @@ function App() {
             <Route path='/catalog/tables' element={<SingleCatalogPage setRootId={setRootId} type='tables'/>}/>
             <Route path='/catalog/accessoires' element={<SingleCatalogPage setRootId={setRootId} type='accessoires'/>}/>
 
-            <Route path={`/catalog/${rootType}/${rootId}`} element={<SingleProductPage rootId={rootId} rootType={rootType} />}/>
+            <Route path={`/catalog/:type/:id`} element={<SingleProductPage rootId={rootId} rootType={rootType} />}/>
+            <Route path='/*' element={<ErrorPage/>}/>
           </Routes>
         </div>
       </div>
