@@ -62,3 +62,69 @@ export const products = {
         },
     ],
 }
+
+
+
+
+export const arrWood = [
+    {
+        name: 'oakWhite',
+        type: 'oakWhite',
+        color: 'white'
+    },
+    {
+        name: 'oakBlack',
+        type: 'oakBlack',
+        color: 'black'
+    },
+    {
+        name: 'oak',
+        type: 'oak',
+        color: 'brown'
+    },
+    {
+        name: 'ash',
+        type: 'ash',
+        color: 'brown'
+    },
+]
+
+
+export const arrFabric = [
+    {
+        name: 'whiteStripe',
+        type: 'whiteStripe',
+        color: 'white'
+    },
+    {
+        name: 'blackStripe',
+        type: 'blackStripe',
+        color: 'black'
+    },
+    {
+        name: 'blueStripe',
+        type: 'blueStripe',
+        color: 'blue'
+    },
+    {
+        name: 'greenStripe',
+        type: 'greenStripe',
+        color: 'green'
+    },
+    {
+        name: 'blue',
+        type: 'blue',
+        color: 'blue'
+    },
+    {
+        name: 'brown',
+        type: 'brown',
+        color: 'brown'
+    },
+    {
+        name: 'yellow',
+        type: 'yellow',
+        color: 'yellow'
+    },
+]
+
