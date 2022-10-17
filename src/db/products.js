@@ -1,5 +1,5 @@
 export const products = {
-    armchair: [
+    armchairs: [
         {
             id: '0',
             name: 'arm-0', 
@@ -25,7 +25,7 @@ export const products = {
             price: '2',
         },
     ],
-    table: [
+    tables: [
         {
             id: '0',
             name: 'tbl-0', 
@@ -43,7 +43,7 @@ export const products = {
             price: '1',
         },
     ],
-    accessoire: [
+    accessoires: [
         {
             id: '0',
             name: 'acc-0', 

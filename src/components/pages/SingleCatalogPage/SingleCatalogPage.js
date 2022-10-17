@@ -5,8 +5,8 @@ import { products } from "../../../db/products";
 const SingleCatalogPage = (props) => {
     return (
         <>
-            {products[props.type].map((item) => {
-                return <ProductCard key={item.id} item={item}/>
+            {products[props.type].map((item, i) => {
+                return <ProductCard setRootId={props.setRootId} key={item.id} item={item} type={props.type} num={i}/>
             })}
         </>
     )

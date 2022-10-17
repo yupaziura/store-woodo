@@ -1,12 +1,14 @@
-const ProductCard = ({item}) => {
+import { Link } from "react-router-dom";
+
+const ProductCard = ({item, type, setRootId, num}) => {
     return (
-        <>
-        <div className="">
-            Name: {item.name}
-            Description: {item.descr}
-            Price: {item.price}
-        </div>
-        </>
+        <Link onClick={()=>setRootId(num)} to={`/catalog/${type}/${item.id}`}>
+            <div className="">
+                Name: {item.name}
+                Description: {item.descr}
+                Price: {item.price}
+            </div>
+        </Link>
     )
 }
 
