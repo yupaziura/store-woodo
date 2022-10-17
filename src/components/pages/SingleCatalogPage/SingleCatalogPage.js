@@ -1,6 +1,7 @@
+import { products } from "../../../db/products";
+
 import ProductCard from "../../ProductCard/ProductCard";
 
-import { products } from "../../../db/products";
 
 const SingleCatalogPage = (props) => {
     return (
