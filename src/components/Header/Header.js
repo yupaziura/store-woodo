@@ -9,14 +9,14 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 const Header = () => {
     return (
         <>
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="light" variant="light">
             <Container>
                 <LinkContainer to="/"><Navbar.Brand>Main</Navbar.Brand></LinkContainer>
                 
 
                 <Nav className="me-auto">
                     <Nav.Link>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                        <NavDropdown title="Catalog" id="collasible-nav-dropdown">
                                 <LinkContainer to="/catalog"><NavDropdown.Item>Catalog</NavDropdown.Item></LinkContainer>
                                 <NavDropdown.Divider />
                                 <LinkContainer to="/catalog/armchairs"><NavDropdown.Item >Armchairs</NavDropdown.Item></LinkContainer>
@@ -27,9 +27,9 @@ const Header = () => {
 
 
 
-                    <Nav.Link>
-                        <LinkContainer to="/contacts">
-                            <Nav.Item>
+                    <Nav.Link style={{alignSelf: 'center'}}>
+                        <LinkContainer to="/contacts" >
+                            <Nav.Item >
                                 Contacts
                             </Nav.Item>
                         </LinkContainer>
