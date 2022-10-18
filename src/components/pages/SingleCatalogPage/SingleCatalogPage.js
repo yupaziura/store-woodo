@@ -1,19 +1,24 @@
 import { products } from "../../../db/products";
-import { useParams } from "react-router-dom";
 
 import ProductCard from "../../ProductCard/ProductCard";
+
+import './SingleCatalogPage.scss';
 
 
 const SingleCatalogPage = (props) => {
 
-    const type = useParams();
-    console.log(type)
     return (
-        <>
+        <div className="single_catalog_container">
+            <h3 className="single_catalog_title">{props.type}</h3>
+
+            <div className="single_catalog">
+
             {products[props.type].map((item, i) => {
-                return <ProductCard setRootId={props.setRootId} key={item.id} item={item} type={props.type} num={i}/>
+                return <ProductCard setRootId={props.setRootId} img={item.img} key={item.id} item={item} type={props.type} num={i}/>
             })}
-        </>
+        </div>
+
+        </div>
     )
 }
 

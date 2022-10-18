@@ -1,0 +1,48 @@
+.card_custom {
+    width: 270px;
+    min-height: 390px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    transition: all 0.5s;
+
+    &:hover {
+        box-shadow: 0 0 10px gray;
+    }
+    img{
+        width:100%;
+        border-radius: 10% 10% 0 0;
+        border-bottom: 1px solid lightgray;;
+    }
+
+    .card_data{
+        padding: 20px;
+    }
+
+    .card_title {
+        text-transform: capitalize;
+    }
+
+    .card_text {
+        margin: 0 0 10px 0;
+        text-align: right;
+    }
+
+    .card_price{
+        color: rgb(101, 100, 100);
+    }
+
+    h4 {
+        margin: 0 0 20px 0;
+    }
+
+}
+
+.card_link {
+    text-decoration: none;
+    color: #212529;
+    &:hover {
+        color: #212529;
+        text-decoration: none;
+    }
+}

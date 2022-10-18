@@ -1,0 +1,21 @@
+
+.single_catalog_container {
+    max-width: 900px;
+    margin-top: 50px;
+    margin: 0 auto;
+
+    .single_catalog_title{
+        margin: 20px 0;
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+
+    .single_catalog {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    
+}

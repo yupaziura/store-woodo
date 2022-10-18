@@ -19,7 +19,7 @@ const Header = () => {
                 </LinkContainer>
                 
 
-                <Nav className="me-auto">
+                <Nav className="me-auto" style={{alignSelf: 'end'}}>
                     
                     <NavDropdown title="Catalog" id="collasible-nav-dropdown">
                             <LinkContainer to="/catalog"><NavDropdown.Item>Catalog</NavDropdown.Item></LinkContainer>
