@@ -1,7 +1,38 @@
-const MainPage = () => {
+import { useNavigate } from 'react-router-dom'
+
+import CustomButton from '../../Button/Button';
+
+import './MainPage.scss';
+
+const MainPage = ({setShow}) => {
+
+    const navigate = useNavigate();
+
+    const actionCatalog = () => {
+        navigate('/catalog');
+    }
+
+    const actionConstructor = () => {
+        setShow(true)
+    }
+
     return (
         <>
-            Main Page
+            <div className="main_page">
+                <div className="headers">
+                    <h1>
+                        woodo
+                    </h1>
+                    <h2>
+                        wooden furniture and accessoires
+                    </h2>
+                </div>
+
+                <div className="buttons">
+                    <CustomButton text='To catalog' action={actionCatalog}/>
+                    <CustomButton text='constructor' action={actionConstructor}/>
+                </div>
+            </div>
         </>
     )
 }

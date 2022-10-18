@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes, useParams} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {useEffect, useState} from 'react';
 
 import Header from './components/Header/Header';
@@ -55,7 +55,7 @@ function App() {
 
          <div className="">
           <Routes>
-            <Route path='/' element={<MainPage/>}/>
+            <Route path='/' element={<MainPage setShow={setShow}/>}/>
             <Route path='/catalog' element={<CatalogPage setRootType={setRootType}/>}/>
             <Route path='/contacts' element={<Contacts/>}/>
 

@@ -1,0 +1,13 @@
+.constr_container {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 40px auto 10px auto;
+    max-width: 900px;
+
+    .constr_img{
+        width: 100%;
+        border:1px solid lightgrey;
+        border-radius: 20px;
+    }
+}
