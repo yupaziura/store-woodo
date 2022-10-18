@@ -7,7 +7,6 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import ColorLine from '../ColorLine/ColorLine';
 import Form from 'react-bootstrap/Form';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
 
 
 import './DialogWindow.scss';
@@ -21,6 +20,7 @@ const DialogWindow = (props) => {
     const [constrFabric, setConstrFabric] = useState();
 
     const [constrId, setConstrId] = useState();
+    const [constrImg, setConstrImg] = useState();
 
 
     const handleClose = () => props.setShow(false);
@@ -32,7 +32,9 @@ const DialogWindow = (props) => {
             return item.type === matcher
         })
         setConstrId(filteredItem ? filteredItem[0]?.id : null)
+        setConstrImg(filteredItem ? filteredItem[0]?.img : null)
     }, [constrType,constrWood, constrFabric])
+
 
 
 
@@ -54,13 +56,16 @@ const DialogWindow = (props) => {
 
                 {constrType === 'armchairs'?
                     <div style={{display:'flex'}}>
-                            <ColorLine setSmth={setConstrWood} array={arrWood}/>
-                            <ColorLine setSmth={setConstrFabric} array={arrFabric}/>
+                            <ColorLine title={'wood type'} setSmth={setConstrWood} array={arrWood}/>
+                            <div style={{width: '300px'}}>  
+                                {constrImg ? <img style={{width: '100%'}} src={constrImg} alt="" /> : null}
+                            </div>
+                            <ColorLine title={'fabric type'} setSmth={setConstrFabric} array={arrFabric}/>
                     </div> 
                     :
                     constrType === 'tables'?
                     <div style={{display:'flex'}}>
-                            <ColorLine setSmth={setConstrWood} array={arrWood}/>
+                            <ColorLine title={'wood type'} setSmth={setConstrWood} array={arrWood}/>
                     </div> 
                     : 
                     null
