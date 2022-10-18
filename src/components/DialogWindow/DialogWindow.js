@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import ColorLine from '../ColorLine/ColorLine';
 import Form from 'react-bootstrap/Form';
+import Button from '../Button/Button';
 
 
 import './DialogWindow.scss';
@@ -54,18 +55,15 @@ const DialogWindow = (props) => {
 
 
 
-                {constrType === 'armchairs'?
-                    <div style={{display:'flex'}}>
-                            <ColorLine title={'wood type'} setSmth={setConstrWood} array={arrWood}/>
-                            <div style={{width: '300px'}}>  
-                                {constrImg ? <img style={{width: '100%'}} src={constrImg} alt="" /> : null}
-                            </div>
-                            <ColorLine title={'fabric type'} setSmth={setConstrFabric} array={arrFabric}/>
-                    </div> 
-                    :
-                    constrType === 'tables'?
-                    <div style={{display:'flex'}}>
-                            <ColorLine title={'wood type'} setSmth={setConstrWood} array={arrWood}/>
+                {constrType ?
+                    <div className='constr_container' >
+                        <ColorLine title={'wood type'} setSmth={setConstrWood} array={arrWood}/>
+                        <div style={{width: '400px'}}>  
+                            {constrImg ? <img className='constr_img' src={constrImg} alt="" /> : null}
+                        </div>
+                        {
+                            constrType === 'armchairs'? <ColorLine title={'fabric type'} setSmth={setConstrFabric} array={arrFabric}/> : <div></div>
+                        }
                     </div> 
                     : 
                     null
@@ -74,9 +72,7 @@ const DialogWindow = (props) => {
 
             <Modal.Footer>
                 <Link to={`catalog/${constrType}/${constrId}`}>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Select            
-                    </Button>
+                    <Button  action={handleClose} text="View item"/>
                 </Link>
             </Modal.Footer>
         </Modal>

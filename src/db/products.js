@@ -276,63 +276,63 @@ export const products = {
 
 export const arrWood = [
     {
-        name: 'oakWhite',
+        name: 'white oak',
         type: 'oakWhite',
-        color: 'white'
+        color: '#F0EDC3'
     },
     {
-        name: 'oakBlack',
+        name: 'black oak',
         type: 'oakBlack',
-        color: 'black'
+        color: '#5E5230'
     },
     {
         name: 'oak',
         type: 'oak',
-        color: 'brown'
+        color: '#8E6936'
     },
     {
         name: 'ash',
         type: 'ash',
-        color: 'brown'
+        color: '#CB9E62'
     },
 ]
 
 
 export const arrFabric = [
     {
-        name: 'whiteStripe',
+        name: 'white with stripe',
         type: 'whiteStripe',
-        color: 'white'
+        color: '#ECECC3'
     },
     {
-        name: 'blackStripe',
+        name: 'black with stripe',
         type: 'blackStripe',
-        color: 'black'
+        color: '#34342A'
     },
     {
-        name: 'blueStripe',
+        name: 'blue with stripe',
         type: 'blueStripe',
-        color: 'blue'
+        color: '#6D9BB9'
     },
     {
-        name: 'greenStripe',
+        name: 'green with stripe',
         type: 'greenStripe',
-        color: 'green'
+        color: '#5D7B4D'
     },
     {
         name: 'blue',
         type: 'blue',
-        color: 'blue'
+        color: '#6487A8'
     },
     {
         name: 'brown',
         type: 'brown',
-        color: 'brown'
+        color: '#7D6943'
     },
     {
         name: 'yellow',
         type: 'yellow',
-        color: 'yellow'
+        color: '#E6D053'
     },
 ]
 
