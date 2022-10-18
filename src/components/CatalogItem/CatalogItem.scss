@@ -1,0 +1,31 @@
+.catalog_item{
+    max-width: 250px;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    .catalog_item_title{
+        color: #212529;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background-color: #ADBB5B;
+        top: 0;
+        right: -10px;
+        z-index: -10;
+        transition: all 0.5s;
+    }
+
+    &:hover {
+        &::after{
+            transform: scale(1.3);
+        }
+    }
+}

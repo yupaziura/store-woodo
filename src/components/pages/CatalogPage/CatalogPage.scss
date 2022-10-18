@@ -1,0 +1,16 @@
+.catalog {
+
+    height: calc(100vh - 78px);
+
+
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+    }
+}
