@@ -1,0 +1,32 @@
+.color_line{
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    .color_pair {
+        margin-top: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        cursor: pointer;
+        &:hover{
+            .color_button{
+                transform: scale(1.2);
+            }
+        }
+
+        .color_button {
+            width: 15px;
+            height:15px;
+
+            border-radius: 100%;
+            border: 1px solid grey;
+            transition: all 0.3s;
+        }
+
+        .color_label {
+            margin-left: 20px;
+            font-size: 15px;
+        }
+    }
+    
+}
