@@ -7,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import {ReactComponent as ReactLogo} from '../../img/logo.svg';
 import CustomButton from '../Button/Button';
 import Stack from 'react-bootstrap/Stack';
+import SocialMedia from '../SocialMedia/SocialMedia';
 
 
 const Header = (props) => {
@@ -49,10 +50,16 @@ const Header = (props) => {
                                 <CustomButton height={'40px'} padding={'5px 15px'} action={buttonAction} text={'constructor'} color={'#adbb5b'}/>
                             </div>
 
+
+
                         </Stack>
-                           
+
                         
                     </Nav>
+
+                    <Navbar.Collapse className="  justify-content-end" >
+                        <SocialMedia/>
+                    </Navbar.Collapse>
 
                 </Container>
             </Navbar>

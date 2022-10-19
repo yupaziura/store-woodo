@@ -1,0 +1,17 @@
+
+.social {
+    display: flex;
+    max-width: fit-content;
+    .icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 30px;
+        transition: all 0.3s;
+        path{
+            fill: #212529;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
