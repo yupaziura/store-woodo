@@ -50,7 +50,7 @@ function App() {
 
       <div className="App">
 
-        <Header/>
+        <Header setShow={setShow}/>
 
 
          <div className="">

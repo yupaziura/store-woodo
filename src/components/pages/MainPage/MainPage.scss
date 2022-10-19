@@ -13,8 +13,9 @@
     }
 
     .buttons {
+        max-width: 40%;
         margin: 20px auto 0 auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 }

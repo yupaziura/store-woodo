@@ -14,15 +14,18 @@ const SingleProductPage = ({rootType, rootId}) => {
             <div className="prod_back_link">
                 <Link to={`/catalog/${type}`}>← Back to catalog</Link>
             </div>
+
             <div className="prod_container">
                 <div className="prod_img">
                     <img src={products[type][id].img} alt="" />
                 </div>
+
                 <div className="prod_info">
                     <div className="header">
                         <h3>{products[type][id].name}</h3>
                         <p>{products[type][id].descr}</p>
                     </div>
+                    
                     <div className="price">
                         <p>{`${products[type][id].price}  ₴`}</p>
                         <CustomButton text="create order"/>
