@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {useEffect, useState} from 'react';
+import { Navigate } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import MainPage from './components/pages/MainPage/MainPage';
@@ -55,7 +56,9 @@ function App() {
 
          <div className="">
           <Routes>
-            <Route path='*' element={<ErrorPage/>}/>
+            <Route path="notfound" element={<ErrorPage />} />
+            <Route path="*" element={<Navigate to="/notfound" replace />} />
+
             <Route path='/' element={<MainPage setShow={setShow}/>}/>
             <Route path='/catalog' element={<CatalogPage setRootType={setRootType}/>}/>
             <Route path='/contacts' element={<Contacts/>}/>
