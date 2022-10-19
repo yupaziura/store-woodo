@@ -13,7 +13,9 @@ const SingleProductPage = ({rootType, rootId}) => {
     const navigate = useNavigate();
 
     useEffect(()=> {
-        navigate("/notfound", { replace: true });
+        if(id == 'undefined'){
+            navigate("/notfound", { replace: true });
+        }
     }, [id, type, navigate])
 
 
