@@ -18,7 +18,15 @@
         font-weight: 800;
     }
     .footer{
-        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        .summ {
+            margin-right: 30px;
+            color: rgb(63, 62, 62);
+            font-style: italic;
+        }
     }
 
 
