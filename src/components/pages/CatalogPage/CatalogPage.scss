@@ -1,16 +1,28 @@
-.catalog {
-
-    height: calc(100vh - 78px);
-
-
+.catalog_container {
     max-width: 900px;
+    margin-top: 50px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+    height: calc(100% - 71px);
 
-    a{
-        text-decoration: none;
+    .catalog {
+        
+        max-width: 900px;
+        margin: 120px auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    
+        a{
+            text-decoration: none;
+        }
+    }
+    
+    
+    .catalog_title{
+        margin: 20px 0;
+        font-size: 50px;
+        font-weight: 800;
     }
 }
+
