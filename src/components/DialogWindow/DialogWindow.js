@@ -16,12 +16,15 @@ import './DialogWindow.scss';
 
 const DialogWindow = (props) => {
 
-    const [constrType, setConstrType] = useState();
+    const [constrType, setConstrType] = useState("default");
     const [constrWood, setConstrWood] = useState();
     const [constrFabric, setConstrFabric] = useState();
 
     const [constrId, setConstrId] = useState();
     const [constrImg, setConstrImg] = useState();
+
+    const summ_end = constrType === 'armchairs'? ` | Fabric ${constrFabric}` : '';
+    const summ = `Product type: ${constrType} | Wood: ${constrWood}`+ summ_end;
 
 
     const handleClose = () => props.setShow(false);
@@ -42,39 +45,62 @@ const DialogWindow = (props) => {
     return (
 
         <Modal fullscreen={true} show={props.show} onHide={handleClose}>
-            <Modal.Header closeButton>
-                <Modal.Title>Constructor</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                <Form.Label>Select furniture type</Form.Label>
-                <Form.Select aria-label="Select" onChange={(e)=> {setConstrType(e.target.value)}}>
-                    <option selected disabled >Select an option</option>
-                    <option value="armchairs">armchair</option>
-                    <option value="tables">table</option>
-                </Form.Select>
 
 
 
-                {constrType ?
-                    <div className='constr_container' >
-                        <ColorLine title={'wood type'} setSmth={setConstrWood} array={arrWood}/>
-                        <div style={{width: '400px'}}>  
-                            {constrImg ? <img className='constr_img' src={constrImg} alt="" /> : null}
-                        </div>
-                        {
-                            constrType === 'armchairs'? <ColorLine title={'fabric type'} setSmth={setConstrFabric} array={arrFabric}/> : <div></div>
-                        }
-                    </div> 
-                    : 
-                    null
-                }
+            <Modal.Body >
+
+
+                <div style={{maxWidth: '1000px', margin: '0 auto'}}>
+
+                    <Modal.Header className="border border-0" closeButton>
+                        <h3 className="title">Constructor</h3>
+                    </Modal.Header>
+
+
+                    <Form.Label>Select furniture type</Form.Label>
+                    <Form.Select value={constrType} aria-label="Select" onChange={(e)=> {setConstrType(e.target.value)}}>
+                        <option value="default" disabled >Select an option</option>
+                        <option value="armchairs">armchair</option>
+                        <option value="tables">table</option>
+                    </Form.Select>
+
+
+
+                    {constrType !== 'default' ?
+                        <>
+                            <div className='constr_container' >
+                                <ColorLine title={'wood type'} setSmth={setConstrWood} array={arrWood}/>
+                                <div style={{width: '40%'}}>  
+                                    {constrImg ? <img className='constr_img' src={constrImg} alt="" /> : null}
+                                </div>
+                                {
+                                    constrType === 'armchairs'? <ColorLine title={'fabric type'} setSmth={setConstrFabric} array={arrFabric}/> : <div></div>
+                                }
+                            </div> 
+
+                            {(constrWood && constrFabric && constrType === 'armchairs') || (constrWood && constrType === 'tables') ? 
+                                <div className='footer'>
+                                    <div className="summ">{summ}</div>
+                                    <div>
+                                        <Link to={`catalog/${constrType}/${constrId}`}>
+                                            <Button  action={handleClose} text="View item"/>
+                                        </Link>
+                                    </div>
+                                </div>
+                                :
+                                null
+                            }
+                        </>
+                        : 
+                        null
+                    }
+
+
+
+
+                </div>
             </Modal.Body>
-
-            <Modal.Footer>
-                <Link to={`catalog/${constrType}/${constrId}`}>
-                    <Button  action={handleClose} text="View item"/>
-                </Link>
-            </Modal.Footer>
         </Modal>
     )
 }

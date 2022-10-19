@@ -50,11 +50,12 @@ function App() {
 
       <div className="App">
 
-        <Header/>
+        <Header setShow={setShow}/>
 
 
          <div className="">
           <Routes>
+            <Route path='*' element={<ErrorPage/>}/>
             <Route path='/' element={<MainPage setShow={setShow}/>}/>
             <Route path='/catalog' element={<CatalogPage setRootType={setRootType}/>}/>
             <Route path='/contacts' element={<Contacts/>}/>
@@ -64,7 +65,6 @@ function App() {
             <Route path='/catalog/accessoires' element={<SingleCatalogPage setRootId={setRootId} type='accessoires'/>}/>
 
             <Route path={`/catalog/:type/:id`} element={<SingleProductPage rootId={rootId} rootType={rootType} />}/>
-            <Route path='/*' element={<ErrorPage/>}/>
           </Routes>
         </div>
       </div>
