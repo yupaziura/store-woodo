@@ -1,9 +1,10 @@
     .constr_container {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     
         margin: 40px auto 10px auto;
-        max-width: 900px;
+        max-width: 90vw;
     
         .constr_img{
             width: 100%;
@@ -29,5 +30,24 @@
         }
     }
 
+    @media (max-width: 768px) {
+        .constr_container {
+            justify-content: space-evenly;
+            .img {
+                order: 3;
+                flex: 56%;
+            }
+        }
+        .footer {
+            .summ {
+                margin-bottom: 10px;
+            }
+        }
+    }
 
+    @media (max-width: 574px) {
+        .title{
+            font-size: 35px;
+        }
+    }
 
