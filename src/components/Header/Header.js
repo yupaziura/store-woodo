@@ -28,26 +28,26 @@ const Header = (props) => {
                     <Nav className="me-auto" style={{alignSelf: 'end', alignItems: 'end'}} >
                         
                         <Stack direction="horizontal" gap={3}>
-                            <NavDropdown title="Catalog" id="collasible-nav-dropdown">
-                                    <LinkContainer to="/catalog"><NavDropdown.Item>Catalog</NavDropdown.Item></LinkContainer>
+                            <NavDropdown title="Каталог" id="collasible-nav-dropdown">
+                                    <LinkContainer to="/catalog"><NavDropdown.Item>Каталог</NavDropdown.Item></LinkContainer>
                                     <NavDropdown.Divider />
-                                    <LinkContainer to="/catalog/armchairs"><NavDropdown.Item >Armchairs</NavDropdown.Item></LinkContainer>
-                                    <LinkContainer to="/catalog/tables"><NavDropdown.Item >Tables</NavDropdown.Item></LinkContainer>
-                                    <LinkContainer to="/catalog/accessoires"><NavDropdown.Item>Accessoires</NavDropdown.Item></LinkContainer>
+                                    <LinkContainer to="/catalog/armchairs"><NavDropdown.Item >Крісла</NavDropdown.Item></LinkContainer>
+                                    <LinkContainer to="/catalog/tables"><NavDropdown.Item >Столи</NavDropdown.Item></LinkContainer>
+                                    <LinkContainer to="/catalog/accessoires"><NavDropdown.Item>Аксесуари</NavDropdown.Item></LinkContainer>
                             </NavDropdown>
 
                             <div>
                                 <LinkContainer to="/contacts" >
                                     <Nav.Link style={{alignSelf: 'center'}}>
                                         <Nav.Item >
-                                            Contacts
+                                            Контакти
                                         </Nav.Item>
                                     </Nav.Link>
                                 </LinkContainer>
                             </div>
                             
                             <div className='ms-5'>
-                                <CustomButton height={'40px'} padding={'5px 15px'} action={buttonAction} text={'constructor'} color={'#adbb5b'}/>
+                                <CustomButton height={'40px'} padding={'5px 15px'} action={buttonAction} text={'конструктор'} color={'#adbb5b'}/>
                             </div>
 
 

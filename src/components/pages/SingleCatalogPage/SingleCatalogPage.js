@@ -9,7 +9,7 @@ const SingleCatalogPage = (props) => {
 
     return (
         <div className="single_catalog_container">
-            <h3 className="single_catalog_title">{props.type}</h3>
+            <h3 className="single_catalog_title">{props.typeName}</h3>
 
             <div className="single_catalog">
 

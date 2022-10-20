@@ -23,8 +23,8 @@ const DialogWindow = (props) => {
     const [constrId, setConstrId] = useState();
     const [constrImg, setConstrImg] = useState();
 
-    const summ_end = constrType === 'armchairs'? ` | Fabric ${constrFabric}` : '';
-    const summ = `Product type: ${constrType} | Wood: ${constrWood}`+ summ_end;
+    const summ_end = constrType === 'armchairs'? ` | Тканина: ${constrFabric}` : '';
+    const summ = `Тип виробу: ${constrType} | Деревина: ${constrWood}`+ summ_end;
 
 
     const handleClose = () => props.setShow(false);
@@ -54,15 +54,15 @@ const DialogWindow = (props) => {
                 <div style={{maxWidth: '1000px', margin: '0 auto'}}>
 
                     <Modal.Header className="border border-0" closeButton>
-                        <h3 className="title">Constructor</h3>
+                        <h3 className="title">Конструктор</h3>
                     </Modal.Header>
 
 
-                    <Form.Label>Select furniture type</Form.Label>
+                    <Form.Label>Оберить тип виробу</Form.Label>
                     <Form.Select value={constrType} aria-label="Select" onChange={(e)=> {setConstrType(e.target.value)}}>
-                        <option value="default" disabled >Select an option</option>
-                        <option value="armchairs">armchair</option>
-                        <option value="tables">table</option>
+                        <option value="default" disabled >Виберіть опцію</option>
+                        <option value="armchairs">крісло</option>
+                        <option value="tables">стіл</option>
                     </Form.Select>
 
 
@@ -84,7 +84,7 @@ const DialogWindow = (props) => {
                                     <div className="summ">{summ}</div>
                                     <div>
                                         <Link to={`catalog/${constrType}/${constrId}`}>
-                                            <Button  action={handleClose} text="View item"/>
+                                            <Button  action={handleClose} text="Переглянути товар"/>
                                         </Link>
                                     </div>
                                 </div>

@@ -63,9 +63,9 @@ function App() {
             <Route path='/catalog' element={<CatalogPage setRootType={setRootType}/>}/>
             <Route path='/contacts' element={<Contacts/>}/>
 
-            <Route path='/catalog/armchairs' element={<SingleCatalogPage setRootId={setRootId} type='armchairs'/>}/>
-            <Route path='/catalog/tables' element={<SingleCatalogPage setRootId={setRootId} type='tables'/>}/>
-            <Route path='/catalog/accessoires' element={<SingleCatalogPage setRootId={setRootId} type='accessoires'/>}/>
+            <Route path='/catalog/armchairs' element={<SingleCatalogPage setRootId={setRootId} type='armchairs' typeName='крісла'/>}/>
+            <Route path='/catalog/tables' element={<SingleCatalogPage setRootId={setRootId} type='tables' typeName='столи'/>}/>
+            <Route path='/catalog/accessoires' element={<SingleCatalogPage setRootId={setRootId} type='accessoires'typeName='аксесуари'/>}/>
 
             <Route path={`/catalog/:type/:id`} element={<SingleProductPage rootId={rootId} rootType={rootType} />}/>
           </Routes>

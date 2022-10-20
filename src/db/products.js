@@ -276,22 +276,22 @@ export const products = {
 
 export const arrWood = [
     {
-        name: 'white oak',
+        name: 'білий дуб',
         type: 'oakWhite',
         color: '#F0EDC3'
     },
     {
-        name: 'black oak',
+        name: 'чорний буд',
         type: 'oakBlack',
         color: '#5E5230'
     },
     {
-        name: 'oak',
+        name: 'дуб',
         type: 'oak',
         color: '#8E6936'
     },
     {
-        name: 'ash',
+        name: 'ясен',
         type: 'ash',
         color: '#CB9E62'
     },
@@ -300,37 +300,37 @@ export const arrWood = [
 
 export const arrFabric = [
     {
-        name: 'white with stripe',
+        name: 'біла зі смужкою',
         type: 'whiteStripe',
         color: '#ECECC3'
     },
     {
-        name: 'black with stripe',
+        name: 'чорна зі смужкою',
         type: 'blackStripe',
         color: '#34342A'
     },
     {
-        name: 'blue with stripe',
+        name: 'блакитна зі смужкою',
         type: 'blueStripe',
         color: '#6D9BB9'
     },
     {
-        name: 'green with stripe',
+        name: 'зелена зі смужкою',
         type: 'greenStripe',
         color: '#5D7B4D'
     },
     {
-        name: 'blue',
+        name: 'блакитна',
         type: 'blue',
         color: '#6487A8'
     },
     {
-        name: 'brown',
+        name: 'коричнева',
         type: 'brown',
         color: '#7D6943'
     },
     {
-        name: 'yellow',
+        name: 'жовта',
         type: 'yellow',
         color: '#E6D053'
     },

@@ -24,13 +24,13 @@ const MainPage = ({setShow}) => {
                         woodo
                     </h1>
                     <h2>
-                        wooden furniture and accessoires
+                        дерев'яні меблі та аксесуари
                     </h2>
                 </div>
 
                 <div className="buttons">
-                    <CustomButton text='To catalog' action={actionCatalog}/>
-                    <CustomButton text='constructor' action={actionConstructor}/>
+                    <CustomButton text='каталог' action={actionCatalog}/>
+                    <CustomButton text='конструктор' action={actionConstructor}/>
                 </div>
             </div>
         </>

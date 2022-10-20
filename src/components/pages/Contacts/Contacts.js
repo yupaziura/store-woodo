@@ -16,7 +16,7 @@ const Contacts = () => {
                     <div className="card_row">
                         <div className="card_pair">
                             <Phone/>
-                            <div className="card_pair_name">Phone</div>
+                            <div className="card_pair_name">Телефон</div>
                         </div>
                         <div className="card_data">
                             <a href="tel: +380502753961" className="test">+380 00 000 0000</a>
@@ -26,7 +26,7 @@ const Contacts = () => {
                     <div className="card_row">
                         <div className="card_pair">
                             <Envelope/>
-                            <div className="card_pair_name">Email</div>
+                            <div className="card_pair_name">Пошта</div>
                         </div>
                         <div className="card_data">
                             <a href="mailto: yuliiapaziura@gmail.com" className="test">client@woodo.com</a>
@@ -46,7 +46,7 @@ const Contacts = () => {
                     <div className="card_row">
                         <div className="card_pair">
                             <Address/>
-                            <div className="card_pair_name">Address</div>
+                            <div className="card_pair_name">Адреса</div>
                         </div>
                         <div className="card_data">
                             Unknown str., Kyiv, Ukraine
