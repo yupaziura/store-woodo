@@ -35,11 +35,15 @@ const SingleProductPage = ({rootType, rootId}) => {
                     <div className="header">
                         <h3>{products[type][id]?.name}</h3>
                         <p>{products[type][id]?.descr}</p>
+                        {products[type][id]?.char.map((item ,i) => {
+                            return <p key={i}>{item}</p>
+                        })}
+                        <p><b>Виміри:</b> {products[type][id]?.size}</p>
                     </div>
                     
                     <div className="price">
                         <p>{`${products[type][id]?.price}  ₴`}</p>
-                        <CustomButton text="create order"/>
+                        <CustomButton text="замовити"/>
                     </div>
                 </div>
             </div>
