@@ -19,3 +19,44 @@
         justify-content: space-evenly;
     }
 }
+
+@media (max-width: 992px) {
+    .main_page{
+        .buttons {
+            max-width: 80%;
+        }    
+    }
+}
+
+
+@media (max-width: 574px) {
+    .main_page{
+        .buttons {
+            max-width: 90%;
+        }  
+        .headers {
+            h1{
+                font-size: 75px;
+            }
+            h2{
+                font-size: 25px; 
+            }
+        }    
+    }
+}
+
+@media (max-width: 320px) {
+    .main_page{
+        .buttons {
+            max-width: 80%;
+        }  
+        .headers {
+            h1{
+                font-size: 70px;
+            }
+            h2{
+                font-size: 20px; 
+            }
+        }  
+    }
+}

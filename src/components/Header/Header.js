@@ -38,7 +38,7 @@ const Header = (props) => {
 
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                            Offcanvas
+                                Меню
                             </Offcanvas.Title>
                         </Offcanvas.Header>
 
