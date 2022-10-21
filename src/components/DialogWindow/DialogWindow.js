@@ -71,7 +71,7 @@ const DialogWindow = (props) => {
                         <>
                             <div className='constr_container' >
                                 <ColorLine title={'wood type'} setSmth={setConstrWood} array={arrWood}/>
-                                <div style={{width: '40%'}}>  
+                                <div className='img' style={{width: '40%'}}>  
                                     {constrImg ? <img className='constr_img' src={constrImg} alt="" /> : null}
                                 </div>
                                 {
@@ -95,10 +95,6 @@ const DialogWindow = (props) => {
                         : 
                         null
                     }
-
-
-
-
                 </div>
             </Modal.Body>
         </Modal>
