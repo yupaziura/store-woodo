@@ -14,6 +14,7 @@
             flex-direction: column;
             outline: 1px dashed #98abb9;
             outline-offset: -5px;
+            flex-wrap: wrap;
 
             .card_row{
                 width: 100%;
@@ -22,11 +23,13 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                flex-wrap: wrap;
 
                 .card_pair {
                    display: flex;
                    justify-content: space-between;
                    align-items: center;
+                   margin: 10px 0;
 
                    .card_pair_name{
                     margin-left: 20px;
@@ -52,6 +55,45 @@
             margin: 20px 0;
             font-size: 50px;
             font-weight: 800;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .contacts {
+        .container{
+            max-width: 750px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        .container{
+            max-width: 570px;
+        }
+    }
+}
+
+
+@media (max-width: 574px) {
+    .contacts {
+        .container{
+            max-width: 420px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .contacts {
+        .container{
+            max-width: 310px;
+
+            .contacts_card {
+                .card_row {
+                    justify-content: center;
+                }
+            }
         }
     }
 }

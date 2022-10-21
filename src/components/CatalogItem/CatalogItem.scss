@@ -1,6 +1,7 @@
 .catalog_item{
     max-width: 250px;
     position: relative;
+    margin-bottom: 40px;
     img{
         width: 100%;
     }
@@ -29,3 +30,13 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .catalog_item{
+        &::after {
+            width: 150px;
+            height: 150px;
+            right: -7px;
+            top: 20px;
+        }
+    }}
