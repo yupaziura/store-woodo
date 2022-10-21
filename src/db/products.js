@@ -2,13 +2,13 @@ export const products = {
     armchairs: [
         {
             id: '0',
-            name: 'ASH кісло', 
+            name: 'ASH крісло', 
             descr: "Кімнатне крісло з ясену та чорними подушками",
             type: 'ash-blackStripe',
             img: require('../img/armchairs/ash-blackStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -17,13 +17,13 @@ export const products = {
         },
         {
             id: '1',
-            name: 'ASH кісло', 
+            name: 'ASH крісло', 
             descr: 'Кімнатне крісло з ясену та блакитними подушками',
             type: 'ash-blue',
             img: require('../img/armchairs/ash-blue.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -32,13 +32,13 @@ export const products = {
         },
         {
             id: '2',
-            name: 'ASH кісло', 
+            name: 'ASH крісло', 
             descr: 'Кімнатне крісло з ясену та блакитними подушками',
             type: 'ash-blueStripe',
             img: require('../img/armchairs/ash-blueStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -47,13 +47,13 @@ export const products = {
         },
         {
             id: '3',
-            name: 'ASH кісло', 
+            name: 'ASH крісло', 
             descr: 'Кімнатне крісло з ясену та коричневими подушками',
             type: 'ash-brown',
             img: require('../img/armchairs/ash-brown.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -62,13 +62,13 @@ export const products = {
         },
         {
             id: '4',
-            name: 'ASH кісло', 
+            name: 'ASH крісло', 
             descr: 'Кімнатне крісло з ясену та чорними зеленими',
             type: 'ash-greenStripe',
             img: require('../img/armchairs/ash-greenStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -77,13 +77,13 @@ export const products = {
         },
         {
             id: '5',
-            name: 'ASH кісло', 
+            name: 'ASH крісло', 
             descr: 'Кімнатне крісло з ясену та білими подушками',
             type: 'ash-whiteStripe',
             img: require('../img/armchairs/ash-whiteStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -92,13 +92,13 @@ export const products = {
         },
         {
             id: '6',
-            name: 'ASH кісло', 
+            name: 'ASH крісло', 
             descr: 'Кімнатне крісло з ясену та жовтими подушками',
             type: 'ash-yellow',
             img: require('../img/armchairs/ash-yellow.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -111,12 +111,12 @@ export const products = {
         {
             id: '7',
             name: 'BlackO крісло', 
-            descr: 'Кімнатне крісло з чорного дуба та чорними подушками',
+            descr: 'Кімнатне крісло з чорного дубу та чорними подушками',
             type: 'oakBlack-blackStripe',
             img: require('../img/armchairs/oakBlack-blackStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -126,12 +126,12 @@ export const products = {
         {
             id: '8',
             name: 'BlackO крісло', 
-            descr: 'Кімнатне крісло з чорного дуба та блакитними подушками',
+            descr: 'Кімнатне крісло з чорного дубу та блакитними подушками',
             type: 'oakBlack-blue',
             img: require('../img/armchairs/oakBlack-blue.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -141,12 +141,12 @@ export const products = {
         {
             id: '9',
             name: 'BlackO крісло', 
-            descr: 'Кімнатне крісло з чорного дуба та блакитними подушками',
+            descr: 'Кімнатне крісло з чорного дубу та блакитними подушками',
             type: 'oakBlack-blueStripe',
             img: require('../img/armchairs/oakBlack-blueStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -156,12 +156,12 @@ export const products = {
         {
             id: '10',
             name: 'BlackO крісло', 
-            descr: 'Кімнатне крісло з чорного дуба та коричневими подушками',
+            descr: 'Кімнатне крісло з чорного дубу та коричневими подушками',
             type: 'oakBlack-brown',
             img: require('../img/armchairs/oakBlack-brown.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -171,12 +171,12 @@ export const products = {
         {
             id: '11',
             name: 'BlackO крісло', 
-            descr: 'Кімнатне крісло з чорного дуба та зеленими подушками',
+            descr: 'Кімнатне крісло з чорного дубу та зеленими подушками',
             type: 'oakBlack-greenStripe',
             img: require('../img/armchairs/oakBlack-greenStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -186,12 +186,12 @@ export const products = {
         {
             id: '12',
             name: 'BlackO крісло', 
-            descr: 'Кімнатне крісло з чорного дуба та білими подушками',
+            descr: 'Кімнатне крісло з чорного дубу та білими подушками',
             type: 'oakBlack-whiteStripe',
             img: require('../img/armchairs/oakBlack-whiteStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -201,12 +201,12 @@ export const products = {
         {
             id: '13',
             name: 'BlackO крісло', 
-            descr: 'Кімнатне крісло з чорного дуба та жовтими подушками',
+            descr: 'Кімнатне крісло з чорного дубу та жовтими подушками',
             type: 'oakBlack-yellow',
             img: require('../img/armchairs/oakBlack-yellow.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -218,12 +218,12 @@ export const products = {
         {
             id: '14',
             name: 'OAK крісло', 
-            descr: 'Кімнатне крісло з дуба та чорними подушками',
+            descr: 'Кімнатне крісло з дубу та чорними подушками',
             type: 'oak-blackStripe',
             img: require('../img/armchairs/oak-blackStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -233,12 +233,12 @@ export const products = {
         {
             id: '15',
             name: 'OAK крісло', 
-            descr: 'Кімнатне крісло з дуба та блакитними подушками',
+            descr: 'Кімнатне крісло з дубу та блакитними подушками',
             type: 'oak-blue',
             img: require('../img/armchairs/oak-blue.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -248,12 +248,12 @@ export const products = {
         {
             id: '16',
             name: 'OAK крісло', 
-            descr: 'Кімнатне крісло з дуба та блакитними подушками',
+            descr: 'Кімнатне крісло з дубу та блакитними подушками',
             type: 'oak-blueStripe',
             img: require('../img/armchairs/oak-blueStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -263,12 +263,12 @@ export const products = {
         {
             id: '17',
             name: 'OAK крісло', 
-            descr: 'Кімнатне крісло з дуба та коричневими подушками',
+            descr: 'Кімнатне крісло з дубу та коричневими подушками',
             type: 'oak-brown',
             img: require('../img/armchairs/oak-brown.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -278,12 +278,12 @@ export const products = {
         {
             id: '18',
             name: 'OAK крісло', 
-            descr: 'Кімнатне крісло з дуба та зеленими подушками',
+            descr: 'Кімнатне крісло з дубу та зеленими подушками',
             type: 'oak-greenStripe',
             img: require('../img/armchairs/oak-greenStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -293,12 +293,12 @@ export const products = {
         {
             id: '19',
             name: 'OAK крісло', 
-            descr: 'Кімнатне крісло з дуба та білими подушками',
+            descr: 'Кімнатне крісло з дубу та білими подушками',
             type: 'oak-whiteStripe',
             img: require('../img/armchairs/oak-whiteStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -308,12 +308,12 @@ export const products = {
         {
             id: '20',
             name: 'OAK крісло', 
-            descr: 'Кімнатне крісло з дуба та жовтими подушками',
+            descr: 'Кімнатне крісло з дубу та жовтими подушками',
             type: 'oak-yellow',
             img: require('../img/armchairs/oak-yellow.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -326,12 +326,12 @@ export const products = {
         {
             id: '21',
             name: 'WhiteO крісло', 
-            descr: 'Кімнатне крісло з білого дуба та чорними подушками',
+            descr: 'Кімнатне крісло з білого дубу та чорними подушками',
             type: 'oakWhite-blackStripe',
             img: require('../img/armchairs/oakWhite-blackStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -341,12 +341,12 @@ export const products = {
         {
             id: '22',
             name: 'WhiteO крісло', 
-            descr: 'Кімнатне крісло з білого дуба та блакитними подушками',
+            descr: 'Кімнатне крісло з білого дубу та блакитними подушками',
             type: 'oakWhite-blue',
             img: require('../img/armchairs/oakWhite-blue.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -356,12 +356,12 @@ export const products = {
         {
             id: '23',
             name: 'WhiteO крісло', 
-            descr: 'Кімнатне крісло з білого дуба та блакитними подушками',
+            descr: 'Кімнатне крісло з білого дубу та блакитними подушками',
             type: 'oakWhite-blueStripe',
             img: require('../img/armchairs/oakWhite-blueStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -371,12 +371,12 @@ export const products = {
         {
             id: '24',
             name: 'WhiteO крісло', 
-            descr: 'Кімнатне крісло з білого дуба та коричневими подушками',
+            descr: 'Кімнатне крісло з білого дубу та коричневими подушками',
             type: 'oakWhite-brown',
             img: require('../img/armchairs/oakWhite-brown.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -386,12 +386,12 @@ export const products = {
         {
             id: '25',
             name: 'WhiteO крісло', 
-            descr: 'Кімнатне крісло з білого дуба та зеленими подушками',
+            descr: 'Кімнатне крісло з білого дубу та зеленими подушками',
             type: 'oakWhite-greenStripe',
             img: require('../img/armchairs/oakWhite-greenStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -401,12 +401,12 @@ export const products = {
         {
             id: '26',
             name: 'WhiteO крісло', 
-            descr: 'Кімнатне крісло з білого дуба та білими подушками',
+            descr: 'Кімнатне крісло з білого дубу та білими подушками',
             type: 'oakWhite-whiteStripe',
             img: require('../img/armchairs/oakWhite-whiteStripe.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -416,12 +416,12 @@ export const products = {
         {
             id: '27',
             name: 'WhiteO крісло', 
-            descr: 'Кімнатне крісло з білого дуба та жовтими подушками',
+            descr: 'Кімнатне крісло з білого дубу та жовтими подушками',
             type: 'oakWhite-yellow',
             img: require('../img/armchairs/oakWhite-yellow.jpg'),
             price: '12 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого интер'єру",
+                "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 100',
@@ -438,7 +438,7 @@ export const products = {
             img: require('../img/icons/no_img.png'),
             price: '10 000',
             char: [
-                "Стіл, що ідеально підійде до Вашого интер'єру",
+                "Стіл, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 50',
@@ -453,7 +453,7 @@ export const products = {
             img: require('../img/icons/no_img.png'),
             price: '1',
             char: [
-                "Стіл, що ідеально підійде до Вашого интер'єру",
+                "Стіл, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '50 x 50 x 50',
