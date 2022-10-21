@@ -60,7 +60,52 @@
                 color: #212529;
             }
         }
+    }
+}
+
+@media (max-width: 992px) {
+    .prod_page_container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .prod_page_container {
+        max-width: 500px;
+
+        .prod_container {
+            flex-direction: column;
+
+        .prod_info{
+            border-left: 0px solid lightgray;
+            border-top:1px solid lightgray ;
+        }
+        }
 
     }
-    
+}
+
+@media (max-width: 574px) {
+    .prod_page_container {
+        max-width: 420px;
+
+        .prod_container {
+            .prod_img {
+                width: 350px;
+            }    
+        }
+
+    }
+}
+
+@media (max-width: 425px) {
+    .prod_page_container {
+        max-width: 310px;
+
+        .prod_container {
+            .prod_img {
+                width: 280px;
+            }    
+        }
+    }
 }
