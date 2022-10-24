@@ -31,12 +31,11 @@ function App() {
 
   // const constrPath = `${}`
 
-  useEffect(()=>{
-    setTimeout(()=> {
-      setShow(true)
-    })
-  },[])
-
+  // useEffect(()=>{
+  //   setTimeout(()=> {
+  //     setShow(true)
+  //   })
+  // },[])
 
   return (
     <>
