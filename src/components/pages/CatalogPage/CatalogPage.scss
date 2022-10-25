@@ -9,10 +9,9 @@
         max-width: 900px;
         margin: 120px auto 0 auto;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         text-align: center;
-        flex-wrap: wrap;
     
         a{
             text-decoration: none;
@@ -30,6 +29,10 @@
 @media (max-width: 992px) {
     .catalog_container{
         max-width: 650px;
+
+        .catalog{
+            flex-wrap: wrap;
+        }
     }
 }
 
