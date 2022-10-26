@@ -14,6 +14,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/ash-blackStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '1',
@@ -29,6 +33,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/ash-blue.jpg'),               
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '2',
@@ -44,6 +52,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/ash-blueStripe.jpg'),               
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '3',
@@ -59,6 +71,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/ash-brown.jpg'),               
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '4',
@@ -74,6 +90,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/ash-greenStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '5',
@@ -89,6 +109,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/ash-whiteStripe.jpg'),              
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '6',
@@ -104,6 +128,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/ash-yellow.jpg'),              
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
 
 
@@ -122,6 +150,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakBlack-blackStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '8',
@@ -137,6 +169,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakBlack-blue.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '9',
@@ -152,6 +188,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakBlack-blueStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '10',
@@ -167,6 +207,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakBlack-brown.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '11',
@@ -182,6 +226,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakBlack-greenStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '12',
@@ -197,6 +245,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakBlack-whiteStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '13',
@@ -212,6 +264,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakBlack-yellow.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
 
 
@@ -229,6 +285,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oak-blackStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '15',
@@ -244,6 +304,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oak-blue.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '16',
@@ -259,6 +323,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oak-blueStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '17',
@@ -274,6 +342,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oak-brown.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '18',
@@ -289,6 +361,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oak-greenStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '19',
@@ -304,6 +380,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oak-whiteStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '20',
@@ -319,6 +399,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oak-yellow.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
 
 
@@ -337,6 +421,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakWhite-blackStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '22',
@@ -352,6 +440,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakWhite-blue.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '23',
@@ -367,6 +459,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakWhite-blueStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '24',
@@ -382,6 +478,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakWhite-brown.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '25',
@@ -397,6 +497,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakWhite-greenStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '26',
@@ -412,6 +516,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakWhite-whiteStripe.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
         {
             id: '27',
@@ -427,6 +535,10 @@ export const products = {
             size: '50 x 50 x 100',
             discount: false,
             delivery: false,
+            imgArray:[
+                require('../img/armchairs/oakWhite-yellow.jpg'),                
+                require('../img/armchairs/slider/sizes.png'),
+            ]
         },
     ],
     tables: [

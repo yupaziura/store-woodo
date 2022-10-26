@@ -2,6 +2,8 @@ import { products } from "../../../db/products";
 import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Carousel from 'react-bootstrap/Carousel';
+import { useState } from "react";
 
 import CustomButton from "../../Button/Button";
 
@@ -16,7 +18,13 @@ const SingleProductPage = ({rootType, rootId}) => {
         if(id == 'undefined'){
             navigate("/notfound", { replace: true });
         }
-    }, [id, type, navigate])
+    }, [id, type, navigate]);
+
+    const [indexSl, setIndexSl] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+        setIndexSl(selectedIndex);
+    };
 
 
     return (
@@ -28,7 +36,24 @@ const SingleProductPage = ({rootType, rootId}) => {
 
             <div className="prod_container">
                 <div className="prod_img">
-                    <img src={products[type][id]?.img} alt="" />
+                    {/* <img src={products[type][id]?.img} alt="" /> */}
+                    <Carousel variant="dark" style={{maxWidth:'100%', paddingLeft:'5px'}} activeIndex={indexSl} onSelect={handleSelect} interval={null}>
+                        {products[type][id]?.imgArray.map((item, i)=> {
+                            return (
+                                
+                                <Carousel.Item key={i}>
+                                    <img
+                                    className="d-block w-100"
+                                    src={item}
+                                    alt="First slide"
+                                    style={{maxWidth:'100%', zIndex: '-1'}}
+                                    />
+                                </Carousel.Item>
+                                
+                            )
+                        })}
+                       
+                    </Carousel>
                 </div>
 
                 <div className="prod_info">
