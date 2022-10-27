@@ -1,4 +1,5 @@
 import { LinkContainer } from 'react-router-bootstrap';
+import { useState } from 'react';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -13,8 +14,16 @@ import './Header.scss';
 
 
 const Header = (props) => {
+
+    const [close, setClose] = useState(false);
+
     const buttonAction = () => {
-        props.setShow(true)
+        props.setShow(true);
+        setClose((close)=> !close);
+    }
+
+    const toggleBar = () => {
+        setClose((close)=> !close);   
     }
 
     const expand = 'lg';
@@ -28,12 +37,14 @@ const Header = (props) => {
                         </Navbar.Brand>
                     </LinkContainer>
 
-                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+                    <Navbar.Toggle onClick={toggleBar} aria-controls={`offcanvasNavbar-expand-${expand}`} />
 
                     <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-${expand}`}
                         aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                         placement="end"
+                        show={close}
+                        onHide={toggleBar}
                     >
 
                         <Offcanvas.Header closeButton>
@@ -45,17 +56,17 @@ const Header = (props) => {
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3" >
                                 
-                                <Nav.Item  className='me-3 mt-3'>
+                                <Nav.Item  className='me-3 mt-3' >
                                     <NavDropdown  title="Каталог" id="collasible-nav-dropdown">
-                                        <LinkContainer  to="/catalog"><NavDropdown.Item>Каталог</NavDropdown.Item></LinkContainer>
+                                        <LinkContainer onClick={toggleBar} to="/catalog"><NavDropdown.Item>Каталог</NavDropdown.Item></LinkContainer>
                                         <NavDropdown.Divider />
-                                        <LinkContainer to="/catalog/armchairs"><NavDropdown.Item >Крісла</NavDropdown.Item></LinkContainer>
-                                        <LinkContainer to="/catalog/tables"><NavDropdown.Item >Столи</NavDropdown.Item></LinkContainer>
-                                        <LinkContainer to="/catalog/accessoires"><NavDropdown.Item>Аксесуари</NavDropdown.Item></LinkContainer>
+                                        <LinkContainer onClick={toggleBar} to="/catalog/armchairs"><NavDropdown.Item >Крісла</NavDropdown.Item></LinkContainer>
+                                        <LinkContainer onClick={toggleBar} to="/catalog/tables"><NavDropdown.Item >Столи</NavDropdown.Item></LinkContainer>
+                                        <LinkContainer onClick={toggleBar} to="/catalog/accessoires"><NavDropdown.Item>Аксесуари</NavDropdown.Item></LinkContainer>
                                     </NavDropdown>
                                 </Nav.Item>
 
-                                <Nav.Item className='me-3 mt-3'>
+                                <Nav.Item className='me-3 mt-3' onClick={toggleBar}>
                                     <LinkContainer to="/contacts"  >
                                         <Nav.Link style={{alignSelf: 'center'}}>
                                             <Nav.Item >
@@ -65,13 +76,17 @@ const Header = (props) => {
                                     </LinkContainer>
                                 </Nav.Item>
                                     
-                                <div className='mt-3'  style={{marginRight: 'auto'}}>
-                                    <CustomButton height={'40px'} padding={'5px 15px'} action={buttonAction} text={'конструктор'} color={'#adbb5b'}/>
-                                </div>
+                                <Nav.Link>  
+                                    <Nav.Item>
+                                    <div className='mt-3'  style={{marginRight: 'auto'}}>
+                                        <CustomButton height={'40px'} padding={'5px 15px'} action={buttonAction} text={'конструктор'} color={'#adbb5b'}/>
+                                    </div>
+                                    </Nav.Item>
+                                </Nav.Link>
                             </Nav>
 
                             <div className='mt-3' >
-                                <Nav.Item>
+                                <Nav.Item onClick={toggleBar}>
                                     <SocialMedia/>
                                 </Nav.Item>
                             </div>
