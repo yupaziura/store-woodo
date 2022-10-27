@@ -6,6 +6,8 @@ import Carousel from 'react-bootstrap/Carousel';
 import { useState } from "react";
 
 import CustomButton from "../../Button/Button";
+import Modal from 'react-bootstrap/Modal';
+import Slider from "../../Carusel/Carusel";
 
 import './SingleProductPage.scss';
 
@@ -20,40 +22,35 @@ const SingleProductPage = ({rootType, rootId}) => {
         }
     }, [id, type, navigate]);
 
-    const [indexSl, setIndexSl] = useState(0);
 
-    const handleSelect = (selectedIndex, e) => {
-        setIndexSl(selectedIndex);
-    };
+
+    
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+
+
 
 
     return (
 
         <div className="prod_page_container">
+
+            <Modal show={show} onHide={handleClose} size='lg'>
+                <Slider products={products} type={type} id={id}/>
+            </Modal>
+
+
+
             <div className="prod_back_link">
                 <Link to={`/catalog/${type}`}>← Back to catalog</Link>
             </div>
 
             <div className="prod_container">
-                <div className="prod_img">
-                    {/* <img src={products[type][id]?.img} alt="" /> */}
-                    <Carousel variant="dark" style={{maxWidth:'100%', paddingLeft:'5px'}} activeIndex={indexSl} onSelect={handleSelect} interval={null}>
-                        {products[type][id]?.imgArray?.map((item, i)=> {
-                            return (
-                                
-                                <Carousel.Item key={i}>
-                                    <img
-                                    className="d-block w-100"
-                                    src={item}
-                                    alt="First slide"
-                                    style={{maxWidth:'100%', zIndex: '-1'}}
-                                    />
-                                </Carousel.Item>
-                                
-                            )
-                        })}
-                       
-                    </Carousel>
+                <div className="prod_img" >
+                    <Slider products={products} type={type} id={id} handleShow={handleShow}/>
                 </div>
 
                 <div className="prod_info">
