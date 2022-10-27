@@ -32,7 +32,6 @@ const DialogWindow = (props) => {
 
 
     const handleClose = () => props.setShow(false);
-    console.log(constrType)
 
 
     useEffect (()=> {
