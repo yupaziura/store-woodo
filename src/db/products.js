@@ -629,7 +629,7 @@ export const arrWood = [
         color: '#F0EDC3'
     },
     {
-        name: 'чорний буд',
+        name: 'чорний дуб',
         type: 'oakBlack',
         color: '#5E5230'
     },
