@@ -38,7 +38,7 @@ const SingleProductPage = ({rootType, rootId}) => {
                 <div className="prod_img">
                     {/* <img src={products[type][id]?.img} alt="" /> */}
                     <Carousel variant="dark" style={{maxWidth:'100%', paddingLeft:'5px'}} activeIndex={indexSl} onSelect={handleSelect} interval={null}>
-                        {products[type][id]?.imgArray.map((item, i)=> {
+                        {products[type][id]?.imgArray?.map((item, i)=> {
                             return (
                                 
                                 <Carousel.Item key={i}>

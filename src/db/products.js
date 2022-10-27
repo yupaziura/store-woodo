@@ -556,6 +556,9 @@ export const products = {
             size: '50 x 50 x 50',
             discount: false,
             delivery: false,
+            imgArray: [
+                require('../img/icons/no_img.png'),  
+            ],
         },
         {
             id: '1',
@@ -571,6 +574,9 @@ export const products = {
             size: '50 x 50 x 50',
             discount: false,
             delivery: false,
+            imgArray: [
+                require('../img/icons/no_img.png'),  
+            ],
         },
     ],
     accessoires: [
@@ -588,6 +594,9 @@ export const products = {
             size: '5 x 10 x 3',
             discount: false,
             delivery: false,
+            imgArray: [
+                require('../img/icons/no_img.png'),  
+            ],
         },
         {
             id: '1',
@@ -603,6 +612,9 @@ export const products = {
             size: '20 x 3 x 5',
             discount: false,
             delivery: false,
+            imgArray: [
+                require('../img/icons/no_img.png'),  
+            ],
         },
     ],
 }
