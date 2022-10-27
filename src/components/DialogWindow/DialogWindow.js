@@ -20,14 +20,19 @@ const DialogWindow = (props) => {
     const [constrWood, setConstrWood] = useState();
     const [constrFabric, setConstrFabric] = useState();
 
+    const [constrTypeUA, setConstrTypeUA] = useState("default");
+    const [constrWooUA, setConstrWoodUA] = useState();
+    const [constrFabricUA, setConstrFabricUA] = useState();
+
     const [constrId, setConstrId] = useState();
     const [constrImg, setConstrImg] = useState();
 
-    const summ_end = constrType === 'armchairs'? ` | Тканина: ${constrFabric}` : '';
-    const summ = `Тип виробу: ${constrType} | Деревина: ${constrWood}`+ summ_end;
+    const summ_end = constrType === 'armchairs'? ` | Подушка: ${constrFabricUA}` : '';
+    const summ = `Тип виробу: ${constrTypeUA} | Деревина: ${constrWooUA}`+ summ_end;
 
 
     const handleClose = () => props.setShow(false);
+    console.log(constrType)
 
 
     useEffect (()=> {
@@ -59,7 +64,7 @@ const DialogWindow = (props) => {
 
 
                     <Form.Label>Оберить тип виробу</Form.Label>
-                    <Form.Select value={constrType} aria-label="Select" onChange={(e)=> {setConstrType(e.target.value)}}>
+                    <Form.Select value={constrType} aria-label="Select" onChange={(e)=> {setConstrType(e.target.value); setConstrTypeUA(e.target.selectedOptions[0].text)}}>
                         <option value="default" disabled >Виберіть опцію</option>
                         <option value="armchairs">крісло</option>
                         <option value="tables">стіл</option>
@@ -70,12 +75,12 @@ const DialogWindow = (props) => {
                     {constrType !== 'default' ?
                         <>
                             <div className='constr_container' >
-                                <ColorLine title={'wood type'} setSmth={setConstrWood} array={arrWood}/>
+                                <ColorLine title={'тип дерева'} setSmth={setConstrWood} setSmthUA={setConstrWoodUA} array={arrWood}/>
                                 <div className='img' style={{width: '40%'}}>  
                                     {constrImg ? <img className='constr_img' src={constrImg} alt="" /> : null}
                                 </div>
                                 {
-                                    constrType === 'armchairs'? <ColorLine title={'fabric type'} setSmth={setConstrFabric} array={arrFabric}/> : <div></div>
+                                    constrType === 'armchairs'? <ColorLine title={'тип подушки'} setSmth={setConstrFabric} setSmthUA={setConstrFabricUA} array={arrFabric}/> : <div></div>
                                 }
                             </div> 
 

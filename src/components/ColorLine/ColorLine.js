@@ -2,13 +2,14 @@ import { useState } from 'react';
 
 import './ColorLine.scss';
 
-const ColorLine = ({array, setSmth, title}) => {
+const ColorLine = ({array, setSmth, title, setSmthUA}) => {
 
     const [activeId, setActiveId] = useState('');
 
 
     const selectAction = (item, i) => {
         setSmth(item.type);
+        setSmthUA(item.name);
         setActiveId(i);
     }
 

@@ -11,7 +11,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -30,7 +30,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -49,7 +49,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -68,7 +68,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -87,7 +87,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -106,7 +106,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -125,7 +125,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -147,7 +147,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -166,7 +166,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -185,7 +185,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -204,7 +204,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -223,7 +223,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -242,7 +242,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -261,7 +261,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -282,7 +282,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -301,7 +301,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -320,7 +320,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -339,7 +339,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -358,7 +358,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -377,7 +377,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -396,7 +396,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -418,7 +418,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -437,7 +437,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -456,7 +456,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -475,7 +475,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -494,7 +494,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -513,7 +513,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
@@ -532,7 +532,7 @@ export const products = {
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
-            size: '50 x 50 x 100',
+            size: '570мм х 800мм х 740мм',
             discount: false,
             delivery: false,
             imgArray:[
