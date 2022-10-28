@@ -58,7 +58,7 @@ const Header = (props) => {
                         </Offcanvas.Header>
 
                         <Offcanvas.Body>
-                            <Nav className="justify-content-end flex-grow-1 pe-3" >
+                            <Nav className=" flex-grow-1 pe-3"  style={{alignItems: 'center'}}>
                                 
                                 <Nav.Item  className='me-3 mt-3' >
                                     <NavDropdown  title="Каталог" id="collasible-nav-dropdown">
