@@ -19,11 +19,15 @@ const Header = (props) => {
 
     const buttonAction = () => {
         props.setShow(true);
-        setClose((close)=> !close);
+        if(window.innerWidth <= 992) {
+            setClose((close)=> !close);
+        }
     }
 
     const toggleBar = () => {
-        setClose((close)=> !close);   
+        if(window.innerWidth <= 992) {
+            setClose((close)=> !close);   
+        }
     }
 
     const expand = 'lg';
