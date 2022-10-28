@@ -2,7 +2,6 @@ import { products } from "../../../db/products";
 import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Carousel from 'react-bootstrap/Carousel';
 import { useState } from "react";
 
 import CustomButton from "../../Button/Button";
@@ -45,7 +44,7 @@ const SingleProductPage = ({rootType, rootId}) => {
 
 
             <div className="prod_back_link">
-                <Link to={`/catalog/${type}`}>← Back to catalog</Link>
+                <Link to={`/catalog/${type}`}>← Назад до каталогу</Link>
             </div>
 
             <div className="prod_container">
