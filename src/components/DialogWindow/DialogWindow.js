@@ -16,13 +16,15 @@ import './DialogWindow.scss';
 
 const DialogWindow = (props) => {
 
-    const [constrType, setConstrType] = useState("default");
-    const [constrWood, setConstrWood] = useState();
-    const [constrFabric, setConstrFabric] = useState();
+    const [constrType, setConstrType] = useState("armchairs");
+    const [constrWood, setConstrWood] = useState('oakWhite');
+    const [constrFabric, setConstrFabric] = useState('blackStripe');
 
-    const [constrTypeUA, setConstrTypeUA] = useState("default");
-    const [constrWooUA, setConstrWoodUA] = useState();
-    const [constrFabricUA, setConstrFabricUA] = useState();
+    console.log(constrWood,constrFabric)
+
+    const [constrTypeUA, setConstrTypeUA] = useState("крісло");
+    const [constrWooUA, setConstrWoodUA] = useState('білий дуб');
+    const [constrFabricUA, setConstrFabricUA] = useState('чорна зі смужкою');
 
     const [constrId, setConstrId] = useState();
     const [constrImg, setConstrImg] = useState();
