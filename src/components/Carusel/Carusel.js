@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 
-const Slider = ({ products, handleShow, type, id, mrg}) => {
+const Slider = ({ products, handleShow, type, id}) => {
 
     const [indexSl, setIndexSl] = useState(0);
 
@@ -14,7 +14,7 @@ const Slider = ({ products, handleShow, type, id, mrg}) => {
 
     return (
         <>
-            <Carousel variant="dark" style={{maxWidth:'100%', marginLeft: mrg}} activeIndex={indexSl} onSelect={handleSelect} interval={null}>
+            <Carousel variant="dark" style={{maxWidth:'100%'}} activeIndex={indexSl} onSelect={handleSelect} interval={null}>
                             
                 {products[type][id]?.imgArray?.map((item, i)=> {
                     return (
