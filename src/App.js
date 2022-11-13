@@ -1,5 +1,5 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import {useEffect, useState} from 'react';
+import { useState} from 'react';
 import { Navigate } from 'react-router-dom';
 
 import Header from './components/Header/Header';

@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 
 import CustomButton from '../../Button/Button';
-import Promotion from '../Promotion/Promotion';
 
 import './MainPage.scss';
 
@@ -22,7 +21,7 @@ const MainPage = ({setShow}) => {
             <div className="main_page">
                 <div className="headers">
                     <h1>
-                        woodo
+                        hvoja
                     </h1>
                     <h2>
                         дерев'яні меблі та аксесуари
