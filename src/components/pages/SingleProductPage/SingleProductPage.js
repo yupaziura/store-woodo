@@ -40,7 +40,7 @@ const SingleProductPage = ({rootType, rootId}) => {
             <div className="prod_page_container">
 
                 <Modal show={show} onHide={handleClose} size='lg'>
-                    <Slider products={products} type={type} id={id}/>
+                    <Slider mrg={0} products={products} type={type} id={id}/>
                 </Modal>
 
 
@@ -51,7 +51,7 @@ const SingleProductPage = ({rootType, rootId}) => {
 
                 <div className="prod_container">
                     <div className="prod_img" >
-                        <Slider products={products} type={type} id={id} handleShow={handleShow}/>
+                        <Slider mrg={'5px'} products={products} type={type} id={id} handleShow={handleShow}/>
                     </div>
 
                     <div className="prod_info">

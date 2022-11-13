@@ -287,7 +287,12 @@ export const products = {
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-blackStripe.jpg'),                
+                require('../img/armchairs/slider/front/oak-blackStripe-front.jpg'),
+                require('../img/armchairs/slider/side/oak-blackStripe-side.jpg'),
+                require('../img/armchairs/slider/back/oak-blackStripe-back.jpg'),
                 require('../img/armchairs/slider/sizes.png'),
+                require('../img/armchairs/slider/oak-detail-1.jpg'),
+                require('../img/armchairs/slider/oak-detail-2.jpg')
             ]
         },
         {
@@ -306,7 +311,12 @@ export const products = {
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-blue.jpg'),                
+                require('../img/armchairs/slider/front/oak-blue-front.jpg'),
+                require('../img/armchairs/slider/side/oak-blue-side.jpg'),
+                require('../img/armchairs/slider/back/oak-blue-back.jpg'),
                 require('../img/armchairs/slider/sizes.png'),
+                require('../img/armchairs/slider/oak-detail-1.jpg'),
+                require('../img/armchairs/slider/oak-detail-2.jpg')
             ]
         },
         {
@@ -325,7 +335,12 @@ export const products = {
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-blueStripe.jpg'),                
+                require('../img/armchairs/slider/front/oak-blueStripe-front.jpg'),
+                require('../img/armchairs/slider/side/oak-blueStripe-side.jpg'),
+                require('../img/armchairs/slider/back/oak-blueStripe-back.jpg'),
                 require('../img/armchairs/slider/sizes.png'),
+                require('../img/armchairs/slider/oak-detail-1.jpg'),
+                require('../img/armchairs/slider/oak-detail-2.jpg')
             ]
         },
         {
@@ -345,6 +360,8 @@ export const products = {
             imgArray:[
                 require('../img/armchairs/oak-brown.jpg'),                
                 require('../img/armchairs/slider/sizes.png'),
+                require('../img/armchairs/slider/oak-detail-1.jpg'),
+                require('../img/armchairs/slider/oak-detail-2.jpg')
             ]
         },
         {
@@ -363,7 +380,12 @@ export const products = {
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-greenStripe.jpg'),                
+                require('../img/armchairs/slider/front/oak-greenStripe-front.jpg'),
+                require('../img/armchairs/slider/side/oak-greenStripe-side.jpg'),
+                require('../img/armchairs/slider/back/oak-greenStripe-back.jpg'),
                 require('../img/armchairs/slider/sizes.png'),
+                require('../img/armchairs/slider/oak-detail-1.jpg'),
+                require('../img/armchairs/slider/oak-detail-2.jpg')
             ]
         },
         {
@@ -382,7 +404,12 @@ export const products = {
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-whiteStripe.jpg'),                
+                require('../img/armchairs/slider/front/oak-whiteStripe-front.jpg'),
+                require('../img/armchairs/slider/side/oak-whiteStripe-side.jpg'),
+                require('../img/armchairs/slider/back/oak-whiteStripe-back.jpg'),
                 require('../img/armchairs/slider/sizes.png'),
+                require('../img/armchairs/slider/oak-detail-1.jpg'),
+                require('../img/armchairs/slider/oak-detail-2.jpg')
             ]
         },
         {
@@ -401,7 +428,12 @@ export const products = {
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-yellow.jpg'),                
+                require('../img/armchairs/slider/front/oak-yellow-front.jpg'),
+                require('../img/armchairs/slider/side/oak-yellow-side.jpg'),
+                require('../img/armchairs/slider/back/oak-yellow-back.jpg'),
                 require('../img/armchairs/slider/sizes.png'),
+                require('../img/armchairs/slider/oak-detail-1.jpg'),
+                require('../img/armchairs/slider/oak-detail-2.jpg')
             ]
         },
 
