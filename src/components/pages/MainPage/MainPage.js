@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 
 import CustomButton from '../../Button/Button';
+import Promotion from '../../Promotion/Promotion';
 
 import './MainPage.scss';
 
@@ -32,6 +33,10 @@ const MainPage = ({setShow}) => {
                     <CustomButton text='каталог' action={actionCatalog}/>
                     <CustomButton text='конструктор' action={actionConstructor}/>
                 </div>
+            </div>
+
+            <div className="">
+                <Promotion/>
             </div>
         </>
     )
