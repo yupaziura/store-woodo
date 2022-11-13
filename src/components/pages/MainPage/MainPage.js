@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 
 import CustomButton from '../../Button/Button';
-import Promotion from '../../Promotion/Promotion';
+import Promotion from '../Promotion/Promotion';
 
 import './MainPage.scss';
 

@@ -10,7 +10,7 @@ import SingleCatalogPage from './components/pages/SingleCatalogPage/SingleCatalo
 import SingleProductPage from './components/pages/SingleProductPage/SingleProductPage';
 import DialogWindow from './components/DialogWindow/DialogWindow';
 import ErrorPage from './components/pages/ErrorPage/ErrorPage';
-import Promotion from './components/Promotion/Promotion';
+import Promotion from './components/pages/Promotion/Promotion';
 
 
 

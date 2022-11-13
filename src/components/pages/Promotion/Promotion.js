@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { products } from '../../db/products';
+import { products } from '../../../db/products';
 
-import ProductCard from '../ProductCard/ProductCard';
+import ProductCard from '../../ProductCard/ProductCard';
 
 
 

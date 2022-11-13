@@ -355,7 +355,7 @@ export const products = {
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '570мм х 800мм х 740мм',
-            discount: true,
+            discount: false,
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-brown.jpg'),                
