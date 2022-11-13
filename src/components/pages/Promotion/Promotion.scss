@@ -7,6 +7,24 @@
         font-size: 45px;
         font-weight: bolder;
         text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .promo_card{
+        width: 100%;
+        background-color: #212529;
+        color: white;
+        padding: 15px;
+
+        border-radius: 10px;
+        outline-offset: -5px;
+        outline: white dashed 1px;
+    }
+
+    .promo_subtitle {
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
         margin: 45px 0;
     }
 
@@ -27,17 +45,18 @@
         }
 
         .promo_timer {
-            max-width: 300px;
+            width: 300px;
             display: flex;
+            justify-content: space-between;
 
             .timer_container {
                 width: 70px;
                 height: 70px;
                 padding: 10px;
-                margin-right: 10px;
+                margin: 0 auto;
 
-                background-color: #212529;
-                color: white;
+                background-color: white;
+                color: #212529;
                 text-align: center;
                 font-size: 25px;
                 font-weight: bolder;
@@ -45,6 +64,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+            .timer_descr {
+                font-size: 15px;
+                font-weight: lighter;
             }
         }
     }
@@ -78,6 +101,20 @@
 @media (max-width: 425px) {
     .container {
         max-width: 310px;
+        .promo_wrapper {
 
+                .promo_timer {
+                    .timer_container {
+                        width: 55px;
+                        height: 55px;
+                    }
+
+                    .timer_descr {
+                        font-size: 12px;
+                        font-weight: lighter;
+                    }
+                }
+            
+        }
     }
 }

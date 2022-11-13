@@ -42,22 +42,36 @@ const Promotion = (props) => {
         <>
             <div className="container">
 
-                <h2 className='promo_title'>УВАГА ЗНИЖКИ!</h2>
-                <div className="promo_wrapper">
-                    <div className="promo_text">
-                        <h2 className='promo_header'>Акція до 11.11</h2>
-                        <p className='promo-descr'>Знижки до -50%!</p>
-                    </div>
+                <div className="promo_card">
+                    <h2 className='promo_title'>УВАГА ЗНИЖКИ!</h2>
+                    <div className="promo_wrapper">
+                        <div className="promo_text">
+                            <h2 className='promo_header'>Акція до 11.11</h2>
+                            <p className='promo-descr'>Знижки до -50%!</p>
+                        </div>
 
-                    <div className="promo_timer">
-                        <div className="timer_container">{days}</div>
-                        <div className="timer_container">{hours}</div>
-                        <div className="timer_container">{minutes}</div>
-                        <div className="timer_container">{seconds}</div>
+                        <div className="promo_timer">
+                            <div>
+                                <div className="timer_container">{days}</div>
+                                <div className='timer_descr'  style={{textAlign: 'center'}}>дні</div>
+                            </div>
+                            <div>
+                                <div className="timer_container">{hours}</div>
+                                <div className='timer_descr'  style={{textAlign: 'center'}}>години</div>
+                            </div>
+                            <div>
+                                <div className="timer_container">{minutes}</div>  
+                                <div className='timer_descr'  style={{textAlign: 'center'}}>хвилини</div>
+                            </div>
+                            <div>
+                                <div className="timer_container">{seconds}</div> 
+                                <div  className='timer_descr' style={{textAlign: 'center'}}>секунди</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <h2 className='promo_title'>ТОВАРИ ЗА АКЦІЙНОЮ ЦІНОЮ</h2>
+                <h2 className='promo_subtitle'>ТОВАРИ ЗА АКЦІЙНОЮ ЦІНОЮ</h2>
 
                 <div className="promo_items">
                     {products.armchairs.filter(item => {
