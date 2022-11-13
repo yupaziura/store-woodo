@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import emailjs from '@emailjs/browser';
 
 import Modal from 'react-bootstrap/Modal';
@@ -7,10 +7,11 @@ import Button from '../Button/Button';
 
 
 
+
 const OrderForm = (props) => {
 
 
-    // const handleClose = () => props.setOrder(false);
+    const handleClose = () => props.setOrder(false);
 
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
@@ -19,47 +20,13 @@ const OrderForm = (props) => {
     const [mail, setMail] = useState('');
 
     const [comment, setComment] = useState('');
+    const [checked, setChecked] = useState(false);
 
     const serviceID = 'default_service';
     const templateID = 'template_xj6d6vd';
 
 
 
-    // const dataNew = {
-    //     'name': name,
-    //     'surname': surname,
-    //     'phone' : phone,
-    //     'comment': comment,
-    //     item: props.id,
-    //     descr: props.descr,
-    // }
-
-    // const form = useRef();
-
-    // const sendEmail = (e) => {
-    //   e.preventDefault();
-  
-    //   emailjs.sendForm(serviceID, templateID, dataNew, '9mAShi4LHvD5Qwgz0')
-    //     .then((result) => {
-    //         console.log(result.text);
-    //     }, (error) => {
-    //         console.log(error.text);
-    //     });
-    // };
-
-    const data = {
-        service_id: serviceID,
-        template_id: templateID,
-        user_id: '9mAShi4LHvD5Qwgz0',
-        template_params: {
-            'name': name,
-            'surname': surname,
-            'phone' : phone,
-            'comment': comment,
-            item: props.id,
-            descr: props.descr,
-        }
-    };
     const params ={
         'name': name,
         'surname': surname,
@@ -72,19 +39,29 @@ const OrderForm = (props) => {
 
     const send = (e) => {
         e.preventDefault();
+
         emailjs.send(serviceID, templateID, params, '9mAShi4LHvD5Qwgz0')
-    .then(function(response) {
-        alert('ok')
-       console.log('SUCCESS!', response.status, response.text);
-    }, function(error) {
-        alert('not ok')
-       console.log('FAILED...', error);
-    });
+            .then(function(response) {
+                alert('ok')
+            console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+                alert('not ok')
+            console.log('FAILED...', error);
+            });
+
+            setName('');
+            setSurname('');
+            setMail('');
+            setPhone('');
+            setComment('');
+
+            setChecked(false);
+            handleClose();
     }
 
 
     return (
-         <Modal  show={props.order}>
+         <Modal  show={props.order} onHide={handleClose}>
             <Modal.Body >
 
 
@@ -122,22 +99,15 @@ const OrderForm = (props) => {
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Даю згоду на обробку персональних даних" />
+                            <Form.Check required onChange={()=>setChecked(!checked)} checked={checked} type="checkbox" label="Даю згоду на обробку персональних даних" />
                         </Form.Group>
-
-
-
-
-     
-                    <button type="submit">test</button>
-              
                             
-                        {/* <Button type='submit' action={sendMail} text="Звмовити"/> */}
+                        <Button type='submit' action={()=>{}} text="Звмовити"/>
                            
-                            </Form>
- </div>
-</Modal.Body>
-</Modal>
+                    </Form>
+                </div>
+            </Modal.Body>
+        </Modal>
     )
 }
 
