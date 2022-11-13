@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
+import { products } from '../../db/products';
+
+import ProductCard from '../ProductCard/ProductCard';
 
 
 
 import './Promotion.scss';
 
-const Promotion = () => {
+const Promotion = (props) => {
 
    
 
@@ -30,6 +33,8 @@ const Promotion = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const arr = ['14', '15', '16', '18', '19', '20'];
+
  
 
 
@@ -50,6 +55,22 @@ const Promotion = () => {
                         <div className="timer_container">{minutes}</div>
                         <div className="timer_container">{seconds}</div>
                     </div>
+                </div>
+
+                <h2 className='promo_title'>ТОВАРИ ЗА АКЦІЙНОЮ ЦІНОЮ</h2>
+
+                <div className="promo_items">
+                    {products.armchairs.filter(item => {
+                        return arr.includes(item.id)
+                    })
+                    .map((item, i) => {
+                        return (
+                            <div key={i}>
+                                <ProductCard setRootId={props.setRootId} item={item} num={i} type='armchairs'/>
+                            </div>
+                        )
+                    })
+                    }
                 </div>
                 
             </div>

@@ -7,7 +7,7 @@ const ProductCard = ({item, type, setRootId, num, img}) => {
         
             <Link className="card_link" onClick={()=>setRootId(num)} to={`/catalog/${type}/${item.id}`}>
                 <div className="card_custom">
-                    <img src={img} alt="" />
+                    <img src={item.img} alt="" />
                     <div className="card_data">
                         <h4 className="card_title">{item.name}</h4>
                         {item.discount? 

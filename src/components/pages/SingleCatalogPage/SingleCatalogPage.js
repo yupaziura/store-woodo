@@ -14,7 +14,7 @@ const SingleCatalogPage = (props) => {
             <div className="single_catalog">
 
             {products[props.type].map((item, i) => {
-                return <ProductCard setRootId={props.setRootId} img={item.img} key={item.id} item={item} type={props.type} num={i}/>
+                return <ProductCard setRootId={props.setRootId}  key={item.id} item={item} type={props.type} num={i}/>
             })}
         </div>
 

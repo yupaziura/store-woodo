@@ -10,6 +10,7 @@ import SingleCatalogPage from './components/pages/SingleCatalogPage/SingleCatalo
 import SingleProductPage from './components/pages/SingleProductPage/SingleProductPage';
 import DialogWindow from './components/DialogWindow/DialogWindow';
 import ErrorPage from './components/pages/ErrorPage/ErrorPage';
+import Promotion from './components/Promotion/Promotion';
 
 
 
@@ -66,6 +67,10 @@ function App() {
             <Route path='/catalog/armchairs' element={<SingleCatalogPage setRootId={setRootId} type='armchairs' typeName='крісла'/>}/>
             <Route path='/catalog/tables' element={<SingleCatalogPage setRootId={setRootId} type='tables' typeName='столи'/>}/>
             <Route path='/catalog/accessoires' element={<SingleCatalogPage setRootId={setRootId} type='accessoires'typeName='аксесуари'/>}/>
+
+
+            <Route path='/promotion' element={<Promotion setRootId={setRootId} />}/>
+
 
             <Route path={`/catalog/:type/:id`} element={<SingleProductPage rootId={rootId} rootType={rootType} />}/>
           </Routes>

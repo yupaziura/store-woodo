@@ -34,10 +34,10 @@ const MainPage = ({setShow}) => {
                     <CustomButton text='конструктор' action={actionConstructor}/>
                 </div>
             </div>
-
+{/* 
             <div className="">
                 <Promotion/>
-            </div>
+            </div> */}
         </>
     )
 }
