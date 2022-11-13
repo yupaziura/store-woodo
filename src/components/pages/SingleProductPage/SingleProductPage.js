@@ -80,7 +80,7 @@ const SingleProductPage = ({rootType, rootId}) => {
                 </div>
             </div>
 
-            <OrderForm setOrder={setOrder} order={order}/>
+            <OrderForm setOrder={setOrder} order={order} id={id} descr={products[type][id]?.descr}/>
         </>
     )
 }

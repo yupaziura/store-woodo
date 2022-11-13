@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from 'react-router-dom';
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
@@ -8,18 +8,83 @@ import Button from '../Button/Button';
 
 
 const OrderForm = (props) => {
-    const handleClose = () => props.setOrder(false);
+
+
+    // const handleClose = () => props.setOrder(false);
 
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
 
-    const [phone, setPhone] = useState();
-    const [mail, setMail] = useState();
+    const [phone, setPhone] = useState('');
+    const [mail, setMail] = useState('');
 
     const [comment, setComment] = useState('');
 
+    const serviceID = 'default_service';
+    const templateID = 'template_xj6d6vd';
+
+
+
+    // const dataNew = {
+    //     'name': name,
+    //     'surname': surname,
+    //     'phone' : phone,
+    //     'comment': comment,
+    //     item: props.id,
+    //     descr: props.descr,
+    // }
+
+    // const form = useRef();
+
+    // const sendEmail = (e) => {
+    //   e.preventDefault();
+  
+    //   emailjs.sendForm(serviceID, templateID, dataNew, '9mAShi4LHvD5Qwgz0')
+    //     .then((result) => {
+    //         console.log(result.text);
+    //     }, (error) => {
+    //         console.log(error.text);
+    //     });
+    // };
+
+    const data = {
+        service_id: serviceID,
+        template_id: templateID,
+        user_id: '9mAShi4LHvD5Qwgz0',
+        template_params: {
+            'name': name,
+            'surname': surname,
+            'phone' : phone,
+            'comment': comment,
+            item: props.id,
+            descr: props.descr,
+        }
+    };
+    const params ={
+        'name': name,
+        'surname': surname,
+        'phone' : phone,
+        'comment': comment,
+        item: props.id,
+        descr: props.descr,
+    }
+     
+
+    const send = (e) => {
+        e.preventDefault();
+        emailjs.send(serviceID, templateID, params, '9mAShi4LHvD5Qwgz0')
+    .then(function(response) {
+        alert('ok')
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+        alert('not ok')
+       console.log('FAILED...', error);
+    });
+    }
+
+
     return (
-         <Modal  show={props.order} onHide={handleClose}>
+         <Modal  show={props.order}>
             <Modal.Body >
 
 
@@ -30,7 +95,7 @@ const OrderForm = (props) => {
                         <h3 className="title">Оформленя замовлення</h3>
                     </Modal.Header>
 
-                    <Form>
+                    <Form  onSubmit={(e)=>send(e)}>
                         <Form.Group className="mb-3">
                             <Form.Label>Ім`я</Form.Label>
                             <Form.Control value={name} onChange={(e)=>setName(e.target.value)} placeholder=' введіть ім`я' required></Form.Control>
@@ -61,21 +126,14 @@ const OrderForm = (props) => {
                         </Form.Group>
 
 
-                        {/* <Form.Label>Оберить тип виробу</Form.Label>
-                        <Form.Select value={constrType} aria-label="Select" onChange={(e)=> {setConstrType(e.target.value); setConstrTypeUA(e.target.selectedOptions[0].text)}}>
-                            <option value="default" disabled >Виберіть опцію</option>
-                            <option value="armchairs">крісло</option>
-                            <option value="tables">стіл</option>
-                        </Form.Select> */}
-
 
 
      
-
+                    <button type="submit">test</button>
               
-                            {/* <Link to={`catalog/${constrType}/${constrId}`}> */}
-                                <Button type='submit' action={handleClose} text="Переглянути товар"/>
-                            {/* </Link> */}
+                            
+                        {/* <Button type='submit' action={sendMail} text="Звмовити"/> */}
+                           
                             </Form>
  </div>
 </Modal.Body>
