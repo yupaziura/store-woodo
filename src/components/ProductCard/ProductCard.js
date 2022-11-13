@@ -10,7 +10,15 @@ const ProductCard = ({item, type, setRootId, num, img}) => {
                     <img src={img} alt="" />
                     <div className="card_data">
                         <h4 className="card_title">{item.name}</h4>
-                        <p className="card_text card_price"><i>{`${item.price} ₴`}</i></p>
+                        {item.discount? 
+                            <>
+                                <p className="card_text card_price card_price_old"><i>{`${item.price} ₴`}</i></p>
+                                <p className="card_text card_price card_price_new"><b>{`3 000₴`}</b></p>
+                            </>
+                            : 
+                            <p className="card_text card_price"><i>{`${item.price} ₴`}</i></p>
+                        }
+                        
                         <p className="card_text card_descr">{item.descr}</p>
                     </div>
                 </div>

@@ -65,7 +65,15 @@ const SingleProductPage = ({rootType, rootId}) => {
                         </div>
                         
                         <div className="price">
-                            <p>{`${products[type][id]?.price}  ₴`}</p>
+                            {products[type][id]?.discount ? 
+                                <div className="old">
+                                <p className="old_price">{`${products[type][id]?.price}  ₴`}</p>
+                                <p className="new_price">{`3 000₴`}</p>
+                                </div>
+                                :
+                                <p>{`${products[type][id]?.price}  ₴`}</p>
+                            }
+                            
                             <CustomButton action={()=>setOrder(true)} text="замовити"/>
                         </div>
                     </div>

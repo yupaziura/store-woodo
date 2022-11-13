@@ -52,6 +52,18 @@
                 margin: 0;
                 padding-left: 30px;
             }
+
+            .old_price {
+                font-size: 15px;
+                text-decoration: line-through;
+                margin-bottom: 5px;
+                color: grey;
+            }
+            .new_price{
+                color: red;
+                font-size: 20px;
+                font-weight: bold;
+            }
         }
     }
 

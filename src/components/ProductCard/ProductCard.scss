@@ -32,6 +32,15 @@
     .card_price{
         color: rgb(101, 100, 100);
     }
+    .card_price_old {
+        font-size: 12px;
+        text-decoration: line-through;
+        margin-bottom: 5px;
+    }
+
+    .card_price_new {
+        color: red;
+    }
 
     h4 {
         margin: 0 0 20px 0;

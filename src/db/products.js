@@ -6,7 +6,7 @@ export const products = {
             descr: "Кімнатне крісло з ясену та чорними подушками",
             type: 'ash-blackStripe',
             img: require('../img/armchairs/ash-blackStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -25,7 +25,7 @@ export const products = {
             descr: 'Кімнатне крісло з ясену та блакитними подушками',
             type: 'ash-blue',
             img: require('../img/armchairs/ash-blue.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -44,7 +44,7 @@ export const products = {
             descr: 'Кімнатне крісло з ясену та блакитними подушками',
             type: 'ash-blueStripe',
             img: require('../img/armchairs/ash-blueStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -63,7 +63,7 @@ export const products = {
             descr: 'Кімнатне крісло з ясену та коричневими подушками',
             type: 'ash-brown',
             img: require('../img/armchairs/ash-brown.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -82,7 +82,7 @@ export const products = {
             descr: 'Кімнатне крісло з ясену та чорними зеленими',
             type: 'ash-greenStripe',
             img: require('../img/armchairs/ash-greenStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -101,7 +101,7 @@ export const products = {
             descr: 'Кімнатне крісло з ясену та білими подушками',
             type: 'ash-whiteStripe',
             img: require('../img/armchairs/ash-whiteStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -120,7 +120,7 @@ export const products = {
             descr: 'Кімнатне крісло з ясену та жовтими подушками',
             type: 'ash-yellow',
             img: require('../img/armchairs/ash-yellow.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -142,7 +142,7 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та чорними подушками',
             type: 'oakBlack-blackStripe',
             img: require('../img/armchairs/oakBlack-blackStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -161,7 +161,7 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та блакитними подушками',
             type: 'oakBlack-blue',
             img: require('../img/armchairs/oakBlack-blue.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -180,7 +180,7 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та блакитними подушками',
             type: 'oakBlack-blueStripe',
             img: require('../img/armchairs/oakBlack-blueStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -199,7 +199,7 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та коричневими подушками',
             type: 'oakBlack-brown',
             img: require('../img/armchairs/oakBlack-brown.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -218,7 +218,7 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та зеленими подушками',
             type: 'oakBlack-greenStripe',
             img: require('../img/armchairs/oakBlack-greenStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -237,7 +237,7 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та білими подушками',
             type: 'oakBlack-whiteStripe',
             img: require('../img/armchairs/oakBlack-whiteStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -256,7 +256,7 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та жовтими подушками',
             type: 'oakBlack-yellow',
             img: require('../img/armchairs/oakBlack-yellow.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -277,13 +277,13 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та чорними подушками',
             type: 'oak-blackStripe',
             img: require('../img/armchairs/oak-blackStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '570мм х 800мм х 740мм',
-            discount: false,
+            discount: true,
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-blackStripe.jpg'),                
@@ -296,13 +296,13 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та блакитними подушками',
             type: 'oak-blue',
             img: require('../img/armchairs/oak-blue.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '570мм х 800мм х 740мм',
-            discount: false,
+            discount: true,
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-blue.jpg'),                
@@ -315,13 +315,13 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та блакитними подушками',
             type: 'oak-blueStripe',
             img: require('../img/armchairs/oak-blueStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '570мм х 800мм х 740мм',
-            discount: false,
+            discount: true,
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-blueStripe.jpg'),                
@@ -334,13 +334,13 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та коричневими подушками',
             type: 'oak-brown',
             img: require('../img/armchairs/oak-brown.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '570мм х 800мм х 740мм',
-            discount: false,
+            discount: true,
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-brown.jpg'),                
@@ -353,13 +353,13 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та зеленими подушками',
             type: 'oak-greenStripe',
             img: require('../img/armchairs/oak-greenStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '570мм х 800мм х 740мм',
-            discount: false,
+            discount: true,
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-greenStripe.jpg'),                
@@ -372,13 +372,13 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та білими подушками',
             type: 'oak-whiteStripe',
             img: require('../img/armchairs/oak-whiteStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '570мм х 800мм х 740мм',
-            discount: false,
+            discount: true,
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-whiteStripe.jpg'),                
@@ -391,13 +391,13 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та жовтими подушками',
             type: 'oak-yellow',
             img: require('../img/armchairs/oak-yellow.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
             ],
             size: '570мм х 800мм х 740мм',
-            discount: false,
+            discount: true,
             delivery: false,
             imgArray:[
                 require('../img/armchairs/oak-yellow.jpg'),                
@@ -413,7 +413,7 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та чорними подушками',
             type: 'oakWhite-blackStripe',
             img: require('../img/armchairs/oakWhite-blackStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -432,7 +432,7 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та блакитними подушками',
             type: 'oakWhite-blue',
             img: require('../img/armchairs/oakWhite-blue.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -451,7 +451,7 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та блакитними подушками',
             type: 'oakWhite-blueStripe',
             img: require('../img/armchairs/oakWhite-blueStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -470,7 +470,7 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та коричневими подушками',
             type: 'oakWhite-brown',
             img: require('../img/armchairs/oakWhite-brown.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -489,7 +489,7 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та зеленими подушками',
             type: 'oakWhite-greenStripe',
             img: require('../img/armchairs/oakWhite-greenStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -508,7 +508,7 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та білими подушками',
             type: 'oakWhite-whiteStripe',
             img: require('../img/armchairs/oakWhite-whiteStripe.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
@@ -527,7 +527,7 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та жовтими подушками',
             type: 'oakWhite-yellow',
             img: require('../img/armchairs/oakWhite-yellow.jpg'),
-            price: '12 000',
+            price: '6 000',
             char: [
                 "Крісло, що ідеально підійде до Вашого інтер'єру",
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
