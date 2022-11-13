@@ -20,7 +20,6 @@ const DialogWindow = (props) => {
     const [constrWood, setConstrWood] = useState('oakWhite');
     const [constrFabric, setConstrFabric] = useState('blackStripe');
 
-    console.log(constrWood,constrFabric)
 
     const [constrTypeUA, setConstrTypeUA] = useState("крісло");
     const [constrWooUA, setConstrWoodUA] = useState('білий дуб');
