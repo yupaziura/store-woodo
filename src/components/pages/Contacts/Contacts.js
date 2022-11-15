@@ -10,7 +10,7 @@ const Contacts = () => {
     return (
         <div className='contacts'>
             <div className="container">
-            <h3 className="contacts_title">contacts</h3>
+            <h3 className="contacts_title">контакти</h3>
 
                 <div className="contacts_card">
                     <div className="card_row">
@@ -19,7 +19,7 @@ const Contacts = () => {
                             <div className="card_pair_name">Телефон</div>
                         </div>
                         <div className="card_data">
-                            <a href="tel: +380502753961" className="test">+380 00 000 0000</a>
+                            <a href="tel: +380965439828" className="test">+380 96 543 9828</a>
                         </div>
                     </div>
 
@@ -29,7 +29,7 @@ const Contacts = () => {
                             <div className="card_pair_name">Пошта</div>
                         </div>
                         <div className="card_data">
-                            <a href="mailto: yuliiapaziura@gmail.com" className="test">client@woodo.com</a>
+                            <a href="mailto: hvoja.store@gmail.com" className="test">hvoja.store@gmail.com</a>
                         </div>
                     </div>
 
@@ -39,7 +39,7 @@ const Contacts = () => {
                             <div className="card_pair_name">Telegram</div>
                         </div>
                         <div className="card_data">
-                            <a href="https://t.me/smth" className="test">contact via telegram</a>
+                            <a href="https://t.me/polyglot18" className="test">написати в Telegram</a>
                         </div>
                     </div>
 
@@ -49,7 +49,7 @@ const Contacts = () => {
                             <div className="card_pair_name">Адреса</div>
                         </div>
                         <div className="card_data">
-                            Unknown str., Kyiv, Ukraine
+                            вул. Польова 101, с. Плесецьке, Київська обл., Україна
                         </div>
                     </div>
                 </div>

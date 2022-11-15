@@ -56,6 +56,15 @@
             font-size: 50px;
             font-weight: 800;
         }
+
+        .card_data {
+            max-width: 250px;
+            a {
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 }
 
@@ -80,6 +89,11 @@
     .contacts {
         .container{
             max-width: 420px;
+
+            .card_data {
+                max-width: 150px;
+                text-align: center;
+            }
         }
     }
 }
