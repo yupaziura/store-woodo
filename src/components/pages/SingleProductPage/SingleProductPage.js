@@ -68,7 +68,7 @@ const SingleProductPage = ({rootType, rootId}) => {
                             {products[type][id]?.discount ? 
                                 <div className="old">
                                 <p className="old_price">{`${products[type][id]?.price}  ₴`}</p>
-                                <p className="new_price">{`3 000₴`}</p>
+                                <p className="new_price">{`${products[type][id]?.discountPrice}  ₴`}</p>
                                 </div>
                                 :
                                 <p>{`${products[type][id]?.price}  ₴`}</p>

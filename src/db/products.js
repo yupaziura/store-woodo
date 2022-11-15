@@ -6,10 +6,10 @@ export const products = {
             descr: "Кімнатне крісло з ясену та чорними подушками",
             type: 'ash-blackStripe',
             img: require('../img/armchairs/ash-blackStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -25,10 +25,10 @@ export const products = {
             descr: 'Кімнатне крісло з ясену та блакитними подушками',
             type: 'ash-blue',
             img: require('../img/armchairs/ash-blue.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -44,10 +44,10 @@ export const products = {
             descr: 'Кімнатне крісло з ясену та блакитними подушками',
             type: 'ash-blueStripe',
             img: require('../img/armchairs/ash-blueStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -63,10 +63,10 @@ export const products = {
             descr: 'Кімнатне крісло з ясену та коричневими подушками',
             type: 'ash-brown',
             img: require('../img/armchairs/ash-brown.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -82,10 +82,10 @@ export const products = {
             descr: 'Кімнатне крісло з ясену та чорними зеленими',
             type: 'ash-greenStripe',
             img: require('../img/armchairs/ash-greenStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -101,10 +101,10 @@ export const products = {
             descr: 'Кімнатне крісло з ясену та білими подушками',
             type: 'ash-whiteStripe',
             img: require('../img/armchairs/ash-whiteStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -120,10 +120,10 @@ export const products = {
             descr: 'Кімнатне крісло з ясену та жовтими подушками',
             type: 'ash-yellow',
             img: require('../img/armchairs/ash-yellow.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -142,10 +142,10 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та чорними подушками',
             type: 'oakBlack-blackStripe',
             img: require('../img/armchairs/oakBlack-blackStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -161,10 +161,10 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та блакитними подушками',
             type: 'oakBlack-blue',
             img: require('../img/armchairs/oakBlack-blue.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -180,10 +180,10 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та блакитними подушками',
             type: 'oakBlack-blueStripe',
             img: require('../img/armchairs/oakBlack-blueStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -199,10 +199,10 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та коричневими подушками',
             type: 'oakBlack-brown',
             img: require('../img/armchairs/oakBlack-brown.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -218,10 +218,10 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та зеленими подушками',
             type: 'oakBlack-greenStripe',
             img: require('../img/armchairs/oakBlack-greenStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -237,10 +237,10 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та білими подушками',
             type: 'oakBlack-whiteStripe',
             img: require('../img/armchairs/oakBlack-whiteStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -256,10 +256,10 @@ export const products = {
             descr: 'Кімнатне крісло з чорного дубу та жовтими подушками',
             type: 'oakBlack-yellow',
             img: require('../img/armchairs/oakBlack-yellow.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -277,10 +277,10 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та чорними подушками',
             type: 'oak-blackStripe',
             img: require('../img/armchairs/oak-blackStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: true,
@@ -301,10 +301,10 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та блакитними подушками',
             type: 'oak-blue',
             img: require('../img/armchairs/oak-blue.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: true,
@@ -325,10 +325,10 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та блакитними подушками',
             type: 'oak-blueStripe',
             img: require('../img/armchairs/oak-blueStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: true,
@@ -349,10 +349,10 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та коричневими подушками',
             type: 'oak-brown',
             img: require('../img/armchairs/oak-brown.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -370,10 +370,10 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та зеленими подушками',
             type: 'oak-greenStripe',
             img: require('../img/armchairs/oak-greenStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: true,
@@ -394,10 +394,10 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та білими подушками',
             type: 'oak-whiteStripe',
             img: require('../img/armchairs/oak-whiteStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: true,
@@ -418,10 +418,10 @@ export const products = {
             descr: 'Кімнатне крісло з дубу та жовтими подушками',
             type: 'oak-yellow',
             img: require('../img/armchairs/oak-yellow.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: true,
@@ -445,10 +445,10 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та чорними подушками',
             type: 'oakWhite-blackStripe',
             img: require('../img/armchairs/oakWhite-blackStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -464,10 +464,10 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та блакитними подушками',
             type: 'oakWhite-blue',
             img: require('../img/armchairs/oakWhite-blue.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -483,10 +483,10 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та блакитними подушками',
             type: 'oakWhite-blueStripe',
             img: require('../img/armchairs/oakWhite-blueStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -502,10 +502,10 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та коричневими подушками',
             type: 'oakWhite-brown',
             img: require('../img/armchairs/oakWhite-brown.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -521,10 +521,10 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та зеленими подушками',
             type: 'oakWhite-greenStripe',
             img: require('../img/armchairs/oakWhite-greenStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -540,10 +540,10 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та білими подушками',
             type: 'oakWhite-whiteStripe',
             img: require('../img/armchairs/oakWhite-whiteStripe.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -559,10 +559,10 @@ export const products = {
             descr: 'Кімнатне крісло з білого дубу та жовтими подушками',
             type: 'oakWhite-yellow',
             img: require('../img/armchairs/oakWhite-yellow.jpg'),
-            price: '6 000',
+            price: '6 000', discountPrice : '3 000',
             char: [
-                "Крісло, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Крісло, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '570мм х 800мм х 740мм',
             discount: false,
@@ -580,10 +580,10 @@ export const products = {
             descr: 'Журнальний столик з дубу',
             type: 'oak',
             img: require('../img/icons/no_img.png'),
-            price: '10 000',
+            price: '3 000',
             char: [
-                "Стіл, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Стіл, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '50 x 50 x 50',
             discount: false,
@@ -598,10 +598,10 @@ export const products = {
             descr: 'Журнальний столик з ясену',
             type: 'ash',
             img: require('../img/icons/no_img.png'),
-            price: '1',
+            price: '3 000',
             char: [
-                "Стіл, що ідеально підійде до Вашого інтер'єру",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Стіл, що ідеально підійде до Вашого інтер'єру.",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '50 x 50 x 50',
             discount: false,
@@ -621,7 +621,7 @@ export const products = {
             price: '300',
             char: [
                 "Тримач для телефону",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '5 x 10 x 3',
             discount: false,
@@ -639,7 +639,7 @@ export const products = {
             price: '450',
             char: [
                 "Підставка для ноутбука",
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam repellat nam, nesciunt aspernatur incidunt distinctio impedit"
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
             ],
             size: '20 x 3 x 5',
             discount: false,

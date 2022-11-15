@@ -28,7 +28,7 @@ const ProductCard = ({item, type, setRootId, num, img}) => {
                             {item.discount? 
                                 <>
                                     <p className="card_text card_price card_price_old"><i>{`${item.price} ₴`}</i></p>
-                                    <p className="card_text card_price card_price_new"><b>{`3 000₴`}</b></p>
+                                    <p className="card_text card_price card_price_new"><b>{`${item.discountPrice} ₴`}</b></p>
                                 </>
                                 : 
                                 <p className="card_text card_price"><i>{`${item.price} ₴`}</i></p>
