@@ -7,7 +7,7 @@ import { useState } from "react";
 import CustomButton from "../../Button/Button";
 import Modal from 'react-bootstrap/Modal';
 import Slider from "../../Carusel/Carusel";
-import OrderForm from "../../Form/Form";
+import OrderForm from "../../Forms/OrderForm";
 
 import './SingleProductPage.scss';
 
