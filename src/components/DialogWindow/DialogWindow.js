@@ -67,7 +67,7 @@ const DialogWindow = (props) => {
                     <Form.Select value={constrType} aria-label="Select" onChange={(e)=> {setConstrType(e.target.value); setConstrTypeUA(e.target.selectedOptions[0].text)}}>
                         <option value="default" disabled >Виберіть опцію</option>
                         <option value="armchairs">крісло</option>
-                        <option value="tables">стіл</option>
+                        {/* <option value="tables">стіл</option> */}
                     </Form.Select>
 
 

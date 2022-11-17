@@ -577,27 +577,9 @@ export const products = {
         {
             id: '0',
             name: 'Журнальний столик', 
-            descr: 'Журнальний столик з дубу',
-            type: 'oak',
-            img: require('../img/icons/no_img.png'),
-            price: '3 000',
-            char: [
-                "Стіл, що ідеально підійде до Вашого інтер'єру.",
-                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
-            ],
-            size: '50 x 50 x 50',
-            discount: false,
-            delivery: false,
-            imgArray: [
-                require('../img/icons/no_img.png'),  
-            ],
-        },
-        {
-            id: '1',
-            name: 'Журнальний столик', 
             descr: 'Журнальний столик з ясену',
-            type: 'ash',
-            img: require('../img/icons/no_img.png'),
+            type: 'oak',
+            img: require('../img/tables/ash.jpg'),
             price: '3 000',
             char: [
                 "Стіл, що ідеально підійде до Вашого інтер'єру.",
@@ -607,17 +589,39 @@ export const products = {
             discount: false,
             delivery: false,
             imgArray: [
-                require('../img/icons/no_img.png'),  
+                require('../img/tables/ash.jpg'),
+                require('../img/tables/ash-front.jpg'),
+                require('../img/tables/ash-compose.jpg'),
+                require('../img/tables/ash-detail-1.jpg'),
+                require('../img/tables/ash-detail-2.jpg'), 
             ],
         },
+        // {
+        //     id: '1',
+        //     name: 'Журнальний столик', 
+        //     descr: 'Журнальний столик з ясену',
+        //     type: 'ash',
+        //     img: require('../img/icons/no_img.png'),
+        //     price: '3 000',
+        //     char: [
+        //         "Стіл, що ідеально підійде до Вашого інтер'єру.",
+        //         "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
+        //     ],
+        //     size: '50 x 50 x 50',
+        //     discount: false,
+        //     delivery: false,
+        //     imgArray: [
+        //         require('../img/icons/no_img.png'),  
+        //     ],
+        // },
     ],
     accessoires: [
         {
             id: '0',
             name: 'Тримач', 
-            descr: 'Тримач для телефону',
+            descr: 'Тримач для телефону (великий)',
             type: 'ash-large',
-            img: require('../img/icons/no_img.png'),
+            img: require('../img/accessoires/oak-large.jpg'),
             price: '300',
             char: [
                 "Тримач для телефону",
@@ -627,15 +631,41 @@ export const products = {
             discount: false,
             delivery: false,
             imgArray: [
-                require('../img/icons/no_img.png'),  
+                require('../img/accessoires/oak-large.jpg'),
+                require('../img/accessoires/oak-large-vert.jpg'),
+                require('../img/accessoires/oak-large-horiz.jpg'),
+                require('../img/accessoires/oak-large-side.jpg'),  
+                require('../img/accessoires/oak-large-compose-1.jpg'), 
+                require('../img/accessoires/oak-large-compose-2.jpg'), 
             ],
         },
         {
             id: '1',
+            name: 'Тримач', 
+            descr: 'Тримач для телефону (маленький)',
+            type: 'ash-large',
+            img: require('../img/accessoires/oak-small.jpg'),
+            price: '300',
+            char: [
+                "Тримач для телефону",
+                "Ми використовуємо натуральні матерали, тому Ви завжди можете бути впевнені у безпеці наших меблів."
+            ],
+            size: '5 x 10 x 3',
+            discount: false,
+            delivery: false,
+            imgArray: [
+                require('../img/accessoires/oak-small.jpg'),
+                require('../img/accessoires/oak-small-vert.jpg'),
+                require('../img/accessoires/oak-small-horiz.jpg'),
+                require('../img/accessoires/oak-small-side.jpg'),  
+            ],
+        },
+        {
+            id: '2',
             name: 'Підставка', 
             descr: 'Підставка для ноутбука',
             type: 'ash-small',
-            img: require('../img/icons/no_img.png'),
+            img: require('../img/accessoires/oak-laptop.jpg'),
             price: '450',
             char: [
                 "Підставка для ноутбука",
@@ -645,7 +675,12 @@ export const products = {
             discount: false,
             delivery: false,
             imgArray: [
-                require('../img/icons/no_img.png'),  
+                require('../img/accessoires/oak-laptop.jpg'),
+                require('../img/accessoires/oak-laptop-side.jpg'),
+                require('../img/accessoires/oak-laptop-front.jpg'),
+                require('../img/accessoires/oak-laptop-ex-1.jpg'), 
+                require('../img/accessoires/oak-laptop-ex-2.jpg'), 
+                require('../img/accessoires/oak-laptop-compose.jpg'),  
             ],
         },
     ],
