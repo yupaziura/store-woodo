@@ -23,7 +23,11 @@ function App() {
 
   const [show, setShow] = useState(false);
 
-
+  const handleFetchData =() =>{ // access in API call
+    fetch(`https://awesome.api.io?api-key=${process.env.REACT_APP_SECRET_NAME}`)
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+  }
 
 
    
