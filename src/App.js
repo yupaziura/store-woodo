@@ -1,6 +1,7 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import { useState} from 'react';
+import { useState, useEffect} from 'react';
 import { Navigate } from 'react-router-dom';
+import useHvojaService from './services/HvojaService';
 
 import Header from './components/Header/Header';
 import MainPage from './components/pages/MainPage/MainPage';
@@ -23,11 +24,17 @@ function App() {
 
   const [show, setShow] = useState(false);
 
-  const handleFetchData =() =>{ // access in API call
-    fetch(`https://awesome.api.io?api-key=${process.env.REACT_APP_SECRET_NAME}`)
-      .then((res) => res.json())
-      .then((data) => console.log(data))
-  }
+  // const handleFetchData =() =>{ // access in API call
+  //   fetch(`https://awesome.api.io?api-key=${process.env.REACT_APP_SECRET_NAME}`)
+  //     .then((res) => res.json())
+  //     .then((data) => console.log(data))
+  // }
+
+ const testVal = useHvojaService();
+
+ useEffect(()=>{
+    console.log(testVal.test())
+ }, [])
 
 
    
