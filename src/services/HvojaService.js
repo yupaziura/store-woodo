@@ -33,30 +33,7 @@ const useHvojaService = () => {
     //     return res.data.results.map(_transformData)
     // }
 
-    // const getAllComics = async (offset = _comicsOffset, limit = 9) => {
-    //     const res = await request(` ${_apiBaseComics}?limit=${limit}&offset=${offset}&${_apiKey}`);
-    //     return res.data.results.map(_transformDataComics)
-    // }
 
-    // const getComic = async (id) => {
-    //     const res = await request(`${_apiBaseComics}/${id}?${_apiKey}`);
-    //     return _transformDataComics(res.data.results[0])
-    // }
-
-    // const getCharacter = async (id) => {
-    //     const res = await request(`${_apiBase}/${id}?${_apiKey}`);
-    //     return _transformData(res.data.results[0])
-    // }
-
-    // const checkDescr = (descr) => {
-    //     if (!descr) {
-    //         return 'Sorry, there is no information about this character. Go to homepage.'
-    //     }
-    //     else if (descr.length >= 200) {
-    //         return descr.substring(0, 200) + '...'
-    //     }
-    //     else {return descr}
-    // }
 
     const _transformData = (item) => {
          return {
@@ -75,20 +52,7 @@ const useHvojaService = () => {
          }
     }
 
-    // const _transformDataComics = (item) => {
-    //     return {
-    //        id: item.id,
-    //        title: item.title,
-    //        price: item.prices[0].price !== 0? item.prices[0].price + ' $' : item.prices[0].price,
-    //        img: item.thumbnail.path + '.' + item.thumbnail.extension,
-    //        pages: item.pageCount,
-    //        descr: item.textObjects[0]?.text? item.textObjects[0]?.text : 'No information',
-    //        language: item.textObjects[0]?.language? item.textObjects[0]?.language : '-',
-    //     }
-    // }
-
-    // return {loading, error,process,  getAllCharacters, getCharacter, clearError, getAllComics, getComic}
-    return {loading, error, getArmchairs, getTables, getAccess}
+    return {loading, error, clearError, getArmchairs, getTables, getAccess}
 
 }
 

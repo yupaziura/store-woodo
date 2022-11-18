@@ -8,7 +8,7 @@ export const useHttp = () => {
     const apiKey = process.env.REACT_APP_AIRTABLE_API_KEY;
 
     const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     const request = useCallback(async (table) => {
 
@@ -34,16 +34,7 @@ export const useHttp = () => {
             throw e;
         }
 
-        // fetch(`https://api.airtable.com/v0/appwJpTH0iQwh6Znk/tblvDPFY3d3aYYysw?api_key=${apiKey}`)
-		// 	.then(res => res.json())
-		// 	.then(res => {
-		// 		console.log(res.records)
-		// 		// this.setState({ booksData: res.records });
-        //         return res.records
-		// 	})
-		// 	.catch(error => console.log(error))
-
-    }, []);
+    }, [apiKey]);
 
     const clearError = useCallback(() => {
         setError(null);

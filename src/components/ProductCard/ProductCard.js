@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { products } from "../../db/products";
 import { useState } from "react";
 
 import Slider from "../Carusel/Carusel";
@@ -18,7 +17,6 @@ const ProductCard = ({item, type, setRootId, num, img}) => {
         <>
             <div className="card_link" >
                 <div className="card_custom">
-                    {/* <img src={item.img} alt="" /> */}
                     <div className="card_img">
                         <Slider item={item} type={type}  />
                     </div>
