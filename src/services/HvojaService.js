@@ -9,9 +9,19 @@ const useHvojaService = () => {
     // const _basicOffset = 210;
     // const _comicsOffset = 0;
 
-    const test = async () => {
-        const res = await request ('armchairs')
-        return res;
+    const getArmchairs = async () => {
+        const res = await request ('tblvDPFY3d3aYYysw');
+        return res.map(_transformData)
+    }
+
+    const getTables = async () => {
+        const res = await request ('tbl6WrMPXtdSdCIfS');
+        return res.map(_transformData)
+    }
+
+    const getAccess = async () => {
+        const res = await request ('tblupOGjNvUKTnJz4');
+        return res.map(_transformData)
     }
 
 
@@ -48,17 +58,22 @@ const useHvojaService = () => {
     //     else {return descr}
     // }
 
-    // const _transformData = (char) => {
-    //      return {
-    //         id: char.id,
-    //         name: char.name,
-    //         description: checkDescr(char.description),
-    //         thumbnail: char.thumbnail.path + '.' + char.thumbnail.extension,
-    //         homepage: char.urls[0].url,
-    //         wiki: char.urls[1].url,
-    //         comics: char.comics.items
-    //      }
-    // }
+    const _transformData = (item) => {
+         return {
+            id: item.fields.id,
+            name: item.fields.name,
+            descr: item.fields.descr,
+            imgArr: item.fields.imgArr,
+            type: item.fields.type,
+            img: item.fields.img,
+            price: item.fields.price,
+            discountPrice: item.fields.discountPrice,
+            char: item.fields.char,
+            size: item.fields.size,
+            discount: item.fields.discount,
+            delivery: item.fields.delivery,
+         }
+    }
 
     // const _transformDataComics = (item) => {
     //     return {
@@ -73,7 +88,7 @@ const useHvojaService = () => {
     // }
 
     // return {loading, error,process,  getAllCharacters, getCharacter, clearError, getAllComics, getComic}
-    return {loading, error, test}
+    return {loading, error, getArmchairs, getTables, getAccess}
 
 }
 

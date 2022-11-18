@@ -30,11 +30,9 @@ function App() {
   //     .then((data) => console.log(data))
   // }
 
- const testVal = useHvojaService();
+ const getData = useHvojaService();
 
- useEffect(()=>{
-    console.log(testVal.test())
- }, [])
+
 
 
    
@@ -75,9 +73,9 @@ function App() {
             <Route path='/catalog' element={<CatalogPage setRootType={setRootType}/>}/>
             <Route path='/contacts' element={<Contacts/>}/>
 
-            <Route path='/catalog/armchairs' element={<SingleCatalogPage setRootId={setRootId} type='armchairs' typeName='крісла'/>}/>
-            <Route path='/catalog/tables' element={<SingleCatalogPage setRootId={setRootId} type='tables' typeName='столи'/>}/>
-            <Route path='/catalog/accessoires' element={<SingleCatalogPage setRootId={setRootId} type='accessoires'typeName='аксесуари'/>}/>
+            <Route path='/catalog/armchairs' element={<SingleCatalogPage getItem={getData.getArmchairs} setRootId={setRootId} type='armchairs' typeName='крісла'/>}/>
+            <Route path='/catalog/tables' element={<SingleCatalogPage getItem={getData.getTables} setRootId={setRootId} type='tables' typeName='столи'/>}/>
+            <Route path='/catalog/accessoires' element={<SingleCatalogPage getItem={getData.getAccess} setRootId={setRootId} type='accessoires'typeName='аксесуари'/>}/>
 
 
             <Route path='/promotion' element={<Promotion setRootId={setRootId} />}/>
