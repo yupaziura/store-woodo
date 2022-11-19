@@ -1,6 +1,7 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import { useState} from 'react';
 import { Navigate } from 'react-router-dom';
+import useHvojaService from './services/HvojaService';
 
 import Header from './components/Header/Header';
 import MainPage from './components/pages/MainPage/MainPage';
@@ -23,25 +24,10 @@ function App() {
 
   const [show, setShow] = useState(false);
 
-  const handleFetchData =() =>{ // access in API call
-    fetch(`https://awesome.api.io?api-key=${process.env.REACT_APP_SECRET_NAME}`)
-      .then((res) => res.json())
-      .then((data) => console.log(data))
-  }
+
+ const {getArmchairs, getTables, getAccess, loading, error, getFabricArr, getWoodArr} = useHvojaService();
 
 
-   
-
-  // test commmit
-  // another test commit
-
-  // const constrPath = `${}`
-
-  // useEffect(()=>{
-  //   setTimeout(()=> {
-  //     setShow(true)
-  //   })
-  // },[])
 
   return (
     <>
@@ -52,6 +38,7 @@ function App() {
                   setShow={setShow} 
                   setRootId={setRootId}
                   rootId={rootId}
+                  loading={loading} error={error} getItem={getArmchairs} getFabricArr={getFabricArr} getWoodArr={getWoodArr}
 />  
 
       <div className="App">
@@ -68,15 +55,15 @@ function App() {
             <Route path='/catalog' element={<CatalogPage setRootType={setRootType}/>}/>
             <Route path='/contacts' element={<Contacts/>}/>
 
-            <Route path='/catalog/armchairs' element={<SingleCatalogPage setRootId={setRootId} type='armchairs' typeName='крісла'/>}/>
-            <Route path='/catalog/tables' element={<SingleCatalogPage setRootId={setRootId} type='tables' typeName='столи'/>}/>
-            <Route path='/catalog/accessoires' element={<SingleCatalogPage setRootId={setRootId} type='accessoires'typeName='аксесуари'/>}/>
+            <Route path='/catalog/armchairs' element={<SingleCatalogPage loading={loading} error={error} getItem={getArmchairs} setRootId={setRootId} type='armchairs' typeName='крісла'/>}/>
+            <Route path='/catalog/tables' element={<SingleCatalogPage loading={loading} error={error} getItem={getTables} setRootId={setRootId} type='tables' typeName='столи'/>}/>
+            <Route path='/catalog/accessoires' element={<SingleCatalogPage loading={loading} error={error} getItem={getAccess} setRootId={setRootId} type='accessoires'typeName='аксесуари'/>}/>
 
 
-            <Route path='/promotion' element={<Promotion setRootId={setRootId} />}/>
+            <Route path='/promotion' element={<Promotion getItem={getArmchairs} loading={loading} error={error} setRootId={setRootId} />}/>
 
 
-            <Route path={`/catalog/:type/:id`} element={<SingleProductPage rootId={rootId} rootType={rootType} />}/>
+            <Route path={`/catalog/:type/:id`} element={<SingleProductPage getArmchairs={getArmchairs} getTables={getTables} getAccess={getAccess} loading={loading} error={error} rootId={rootId} rootType={rootType} />}/>
           </Routes>
         </div>
       </div>

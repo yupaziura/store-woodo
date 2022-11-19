@@ -1,44 +1,46 @@
 import { useState, useCallback } from "react";
 
+
 export const useHttp = () => {
+
+    
+
+    const apiKey = process.env.REACT_APP_AIRTABLE_API_KEY;
+
     const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(false);
-    const [process, setProcess] = useState('waiting');
+    const [loading, setLoading] = useState(true);
 
-    const request = useCallback(async (url, method = 'GET', body = null, headers = {'Content-Type': 'application/json'}) => {
+    const request = useCallback(async (table) => {
 
-        setLoading(true);
-        setProcess('loading')
+        setLoading(true);        
 
         try{
-            const response = await fetch (url, {method, body, headers});
+            const response = await fetch(`https://api.airtable.com/v0/appwJpTH0iQwh6Znk/${table}?api_key=${apiKey}`)
+
 
             if(!response.ok) {
-                throw new Error (`Could not fetch ${url}, status: ${response.status}`)
+                throw new Error (`Could not fetch , status: ${response.status}`)
             }
 
             const data = await response.json();
 
             setLoading(false);
-            // setProcess('confirmed')
-            return(data);
+            return(data.records);
             
 
         } catch (e) {
             setLoading(false);
             setError(e.message);
-            setProcess('error')
             throw e;
         }
 
-    }, []);
+    }, [apiKey]);
 
     const clearError = useCallback(() => {
         setError(null);
-        setProcess('loading');
     }, []);
 
-    return {loading, request, error, clearError, process, setProcess}
+    return {loading, request, error, clearError}
 
 }
 

@@ -1,4 +1,3 @@
-import { products } from "../../../db/products";
 import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -8,13 +7,40 @@ import CustomButton from "../../Button/Button";
 import Modal from 'react-bootstrap/Modal';
 import Slider from "../../Carusel/Carusel";
 import OrderForm from "../../Forms/OrderForm";
+import { Spinner } from "react-bootstrap";
 
 import './SingleProductPage.scss';
 
-const SingleProductPage = ({rootType, rootId}) => {
+const SingleProductPage = ({rootType, rootId, getArmchairs, getTables, getAccess, loading, error}) => {
 
     const {type, id} = useParams();
     const navigate = useNavigate();
+
+    const [data, setData] = useState([]);
+
+    const onLoaded = (data) => {
+        setData(data.sort((a,b) => a.id - b.id) );
+    }
+    const onRequest = () => {
+
+        switch (type) {
+            case 'armchairs':
+                getArmchairs().then(onLoaded);
+                break;
+            case 'tables':
+                getTables().then(onLoaded);
+                break;
+            case 'accessoires':
+                getAccess().then(onLoaded);
+                break;
+            default: 
+            throw new Error('unexpected error');
+        }
+    }
+
+    useEffect(() => {onRequest()}, [id, type])
+
+
 
     useEffect(()=> {
         if(id == 'undefined'){
@@ -40,7 +66,7 @@ const SingleProductPage = ({rootType, rootId}) => {
             <div className="prod_page_container">
 
                 <Modal show={show} onHide={handleClose} size='lg'>
-                    <Slider products={products} type={type} id={id}/>
+                    <Slider item={data[id]} type={type} id={id}/>
                 </Modal>
 
 
@@ -49,38 +75,50 @@ const SingleProductPage = ({rootType, rootId}) => {
                     <Link to={`/catalog/${type}`}>← Назад до каталогу</Link>
                 </div>
 
-                <div className="prod_container">
-                    <div className="prod_img" >
-                        <Slider products={products} type={type} id={id} handleShow={handleShow}/>
-                    </div>
+                {loading? 
 
-                    <div className="prod_info">
-                        <div className="header">
-                            <h3>{products[type][id]?.name}</h3>
-                            <p>{products[type][id]?.descr}</p>
-                            {products[type][id]?.char.map((item ,i) => {
-                                return <p key={i}>{item}</p>
-                            })}
-                            <p><b>Виміри:</b> {products[type][id]?.size}</p>
-                        </div>
-                        
-                        <div className="price">
-                            {products[type][id]?.discount ? 
-                                <div className="old">
-                                <p className="old_price">{`${products[type][id]?.price}  ₴`}</p>
-                                <p className="new_price">{`${products[type][id]?.discountPrice}  ₴`}</p>
-                                </div>
-                                :
-                                <p>{`${products[type][id]?.price}  ₴`}</p>
-                            }
-                            
-                            <CustomButton action={()=>setOrder(true)} text="замовити"/>
-                        </div>
+                    <div style={{textAlign: 'center'}}>
+                        <Spinner animation="border" role="status" >
+                            <span className="visually-hidden">Loading...</span>
+                        </Spinner>
                     </div>
-                </div>
+                        : 
+                        
+                        error? <h5>{'Вибачте, сталася помилка :('}</h5> :
+
+                    <div className="prod_container">
+                        <div className="prod_img" >
+                            <Slider item={data[id]} type={type} id={id} handleShow={handleShow}/>
+                        </div>
+
+                        <div className="prod_info">
+                            <div className="header">
+                                <h3>{data[id]?.name}</h3>
+                                <p>{data[id]?.descr}</p>
+                                {data[id]?.char?.map((item ,i) => {
+                                    return <p key={i}>{item}</p>
+                                })}
+                                <p><b>Виміри:</b> {data[id]?.size}</p>
+                            </div>
+                            
+                            <div className="price">
+                                {data[id]?.discount ? 
+                                    <div className="old">
+                                    <p className="old_price">{`${data[id]?.price}  ₴`}</p>
+                                    <p className="new_price">{`${data[id]?.discountPrice}  ₴`}</p>
+                                    </div>
+                                    :
+                                    <p>{`${data[id]?.price}  ₴`}</p>
+                                }
+                                
+                                <CustomButton action={()=>setOrder(true)} text="замовити"/>
+                            </div>
+                        </div>   
+                    </div>
+                }
             </div>
 
-            <OrderForm setOrder={setOrder} order={order} id={id} descr={products[type][id]?.descr}/>
+            <OrderForm setOrder={setOrder} order={order} id={id} descr={data[id]?.descr}/>
         </>
     )
 }

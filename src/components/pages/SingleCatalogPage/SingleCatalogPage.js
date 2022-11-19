@@ -1,49 +1,50 @@
-import { products } from "../../../db/products";
+import { useEffect, useState } from "react";
 
 import ProductCard from "../../ProductCard/ProductCard";
+import { Spinner } from "react-bootstrap";
 
 import './SingleCatalogPage.scss';
 
 
 const SingleCatalogPage = (props) => {
 
-    var Airtable = require('airtable');
-    Airtable.configure({
-        endpointUrl: 'https://api.airtable.com',
-        apiKey: 'keyGg2EIF6ewnOrh6'
-    });
-    var base = Airtable.base('appwJpTH0iQwh6Znk');
+    const [data, setData] = useState([]);
 
-    base('armchairs').select({
-        // Selecting the first 3 records in Grid view:
-        maxRecords: 3,
-        view: "Grid view"
-    }).eachPage(function page(records, fetchNextPage) {
-        // This function (`page`) will get called for each page of records.
-    
-        records.forEach(function(record) {
-            console.log('Retrieved', record.get('name'));
-        });
-    
-        // To fetch the next page of records, call `fetchNextPage`.
-        // If there are more records, `page` will get called again.
-        // If there are no more records, `done` will get called.
-        fetchNextPage();
-    
-    }, function done(err) {
-        if (err) { console.error(err); return; }
-    });
+    const onLoaded = (data) => {
+        setData(data.sort((a,b) => a.id - b.id) );
+    }
+
+    const onRequest = () => {
+        props.getItem().then(onLoaded);
+    }
+
+
+    useEffect(() => {onRequest()}, [props.typeName])
+
+
 
     return (
         <div className="single_catalog_container">
             <h3 className="single_catalog_title">{props.typeName}</h3>
 
-            <div className="single_catalog">
+            {props.loading? 
 
-            {products[props.type].map((item, i) => {
-                return <ProductCard setRootId={props.setRootId}  key={item.id} item={item} type={props.type} num={i}/>
-            })}
-        </div>
+            <div style={{textAlign: 'center'}}>
+                <Spinner animation="border" role="status" >
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            </div>
+                 : 
+                
+                props.error? <h5>{'Вибачте, сталася помилка :('}</h5> : 
+
+                <div className="single_catalog">
+
+                    {data.map((item, i) => {
+                        return <ProductCard setRootId={props.setRootId}  key={item.id} item={item} type={props.type} num={i}/>
+                    })}
+                </div>
+            }
 
         </div>
     )
