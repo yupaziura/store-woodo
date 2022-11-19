@@ -30,7 +30,7 @@ function App() {
   //     .then((data) => console.log(data))
   // }
 
- const {getArmchairs, getTables, getAccess, loading, error, clearError} = useHvojaService();
+ const {getArmchairs, getTables, getAccess, loading, error} = useHvojaService();
 
 
 
@@ -64,7 +64,7 @@ function App() {
             <Route path='/catalog/accessoires' element={<SingleCatalogPage loading={loading} error={error} getItem={getAccess} setRootId={setRootId} type='accessoires'typeName='аксесуари'/>}/>
 
 
-            <Route path='/promotion' element={<Promotion setRootId={setRootId} />}/>
+            <Route path='/promotion' element={<Promotion getItem={getArmchairs} loading={loading} error={error} setRootId={setRootId} />}/>
 
 
             <Route path={`/catalog/:type/:id`} element={<SingleProductPage rootId={rootId} rootType={rootType} />}/>

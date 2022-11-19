@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { products } from '../../../db/products';
 
+import { Spinner } from "react-bootstrap";
 import ProductCard from '../../ProductCard/ProductCard';
 
 
@@ -47,9 +47,19 @@ const Promotion = (props) => {
     return () => clearInterval(interval);
   }, []);
 
-  const arr = ['14', '15', '16', '18', '19', '20'];
 
- 
+  const [data, setData] = useState([]);
+
+  const onLoaded = (data) => {
+      setData(data.sort((a,b) => a.id - b.id) );
+      console.log(data)
+  }
+
+  const onRequest = () => {
+      props.getItem().then(onLoaded);
+  }
+
+  useEffect(() => {onRequest()}, []);
 
 
     return (
@@ -87,19 +97,31 @@ const Promotion = (props) => {
 
                 <h2 className='promo_subtitle'>ТОВАРИ ЗА АКЦІЙНОЮ ЦІНОЮ</h2>
 
-                <div className="promo_items">
-                    {products.armchairs.filter(item => {
-                        return arr.includes(item.id)
-                    })
-                    .map((item, i) => {
-                        return (
-                            <div key={i}>
-                                <ProductCard setRootId={props.setRootId} item={item} num={i} type='armchairs'/>
-                            </div>
-                        )
-                    })
-                    }
-                </div>
+                {props.loading? 
+
+                    <div style={{textAlign: 'center'}}>
+                        <Spinner animation="border" role="status" >
+                            <span className="visually-hidden">Loading...</span>
+                        </Spinner>
+                    </div>
+                        : 
+    
+                    props.error? <h5>{'Вибачте, сталася помилка :('}</h5> : 
+
+                    <div className="promo_items">
+                        {data.filter(item => {
+                            return item.discount === true
+                        })
+                        .map((item, i) => {
+                            return (
+                                <div key={i}>
+                                    <ProductCard setRootId={props.setRootId} item={item} num={i} type='armchairs'/>
+                                </div>
+                            )
+                        })
+                        }
+                    </div>
+                }
                 
             </div>
         </>
