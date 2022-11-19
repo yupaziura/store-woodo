@@ -24,11 +24,6 @@ function App() {
 
   const [show, setShow] = useState(false);
 
-  // const handleFetchData =() =>{ // access in API call
-  //   fetch(`https://awesome.api.io?api-key=${process.env.REACT_APP_SECRET_NAME}`)
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data))
-  // }
 
  const {getArmchairs, getTables, getAccess, loading, error, getFabricArr, getWoodArr} = useHvojaService();
 
@@ -68,7 +63,7 @@ function App() {
             <Route path='/promotion' element={<Promotion getItem={getArmchairs} loading={loading} error={error} setRootId={setRootId} />}/>
 
 
-            <Route path={`/catalog/:type/:id`} element={<SingleProductPage rootId={rootId} rootType={rootType} />}/>
+            <Route path={`/catalog/:type/:id`} element={<SingleProductPage getArmchairs={getArmchairs} getTables={getTables} getAccess={getAccess} loading={loading} error={error} rootId={rootId} rootType={rootType} />}/>
           </Routes>
         </div>
       </div>
