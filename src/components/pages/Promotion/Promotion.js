@@ -52,7 +52,6 @@ const Promotion = (props) => {
 
   const onLoaded = (data) => {
       setData(data.sort((a,b) => a.id - b.id) );
-      console.log(data)
   }
 
   const onRequest = () => {

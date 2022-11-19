@@ -30,7 +30,7 @@ function App() {
   //     .then((data) => console.log(data))
   // }
 
- const {getArmchairs, getTables, getAccess, loading, error} = useHvojaService();
+ const {getArmchairs, getTables, getAccess, loading, error, getFabricArr, getWoodArr} = useHvojaService();
 
 
 
@@ -43,6 +43,7 @@ function App() {
                   setShow={setShow} 
                   setRootId={setRootId}
                   rootId={rootId}
+                  loading={loading} error={error} getItem={getArmchairs} getFabricArr={getFabricArr} getWoodArr={getWoodArr}
 />  
 
       <div className="App">

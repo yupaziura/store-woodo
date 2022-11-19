@@ -1,4 +1,3 @@
-import {arrWood, arrFabric, products} from '../../db/products';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -15,6 +14,29 @@ import './DialogWindow.scss';
 
 
 const DialogWindow = (props) => {
+
+    const [data, setData] = useState([]);
+    const [dataWood, setDataWood] = useState([]);
+    const [dataFabric, setDataFabric] = useState([]);
+
+    const onLoaded = (data) => {
+        setData(data.sort((a,b) => a.id - b.id) );
+    }
+    const onLoadedWood = (data) => {
+        setDataWood(data.sort((a,b) => a.id - b.id) );
+    }
+
+    const onLoadedFabric = (data) => {
+        setDataFabric(data.sort((a,b) => a.id - b.id) );
+    }
+
+    const onRequest = () => {
+        props.getItem().then(onLoaded);
+        props.getFabricArr().then(onLoadedFabric);
+        props.getWoodArr().then(onLoadedWood);
+    }
+
+    useEffect(() => {onRequest()}, []);
 
     const [constrType, setConstrType] = useState("armchairs");
     const [constrWood, setConstrWood] = useState('oakWhite');
@@ -36,15 +58,13 @@ const DialogWindow = (props) => {
 
 
     useEffect (()=> {
-        const matcher = constrType === 'tables' ? constrWood : `${constrWood}-${constrFabric}`;
-        const filteredItem = products[constrType]?.filter((item)=>{
+        const matcher = `${constrWood}-${constrFabric}`;
+        const filteredItem = data?.filter((item)=>{
             return item.type === matcher
         })
         setConstrId(filteredItem ? filteredItem[0]?.id : null)
-        setConstrImg(filteredItem ? filteredItem[0]?.img : null)
-    }, [constrType,constrWood, constrFabric])
-
-
+        setConstrImg(filteredItem ? filteredItem[0]?.imgArr[1].url : null)
+    }, [constrType,constrWood, constrFabric, data]);
 
 
     return (
@@ -75,12 +95,12 @@ const DialogWindow = (props) => {
                     {constrType !== 'default' ?
                         <>
                             <div className='constr_container' >
-                                <ColorLine title={'тип дерева'} setSmth={setConstrWood} setSmthUA={setConstrWoodUA} array={arrWood}/>
+                                <ColorLine title={'тип дерева'} setSmth={setConstrWood} setSmthUA={setConstrWoodUA} array={dataWood}/>
                                 <div className='img' style={{width: '40%'}}>  
                                     {constrImg ? <img className='constr_img' src={constrImg} alt="" /> : null}
                                 </div>
                                 {
-                                    constrType === 'armchairs'? <ColorLine title={'тип подушки'} setSmth={setConstrFabric} setSmthUA={setConstrFabricUA} array={arrFabric}/> : <div></div>
+                                    constrType === 'armchairs'? <ColorLine title={'тип подушки'} setSmth={setConstrFabric} setSmthUA={setConstrFabricUA} array={dataFabric}/> : <div></div>
                                 }
                             </div> 
 
