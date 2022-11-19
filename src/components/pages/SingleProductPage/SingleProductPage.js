@@ -20,7 +20,6 @@ const SingleProductPage = ({rootType, rootId, getArmchairs, getTables, getAccess
 
     const onLoaded = (data) => {
         setData(data.sort((a,b) => a.id - b.id) );
-        console.log(data)
     }
     const onRequest = () => {
 
