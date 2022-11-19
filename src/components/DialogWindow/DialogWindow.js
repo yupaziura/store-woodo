@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 import Modal from 'react-bootstrap/Modal';
-// import Button from 'react-bootstrap/Button';
 import ColorLine from '../ColorLine/ColorLine';
 import Form from 'react-bootstrap/Form';
 import Button from '../Button/Button';
+import { Spinner } from 'react-bootstrap';
 
 
 import './DialogWindow.scss';
@@ -75,52 +75,64 @@ const DialogWindow = (props) => {
 
             <Modal.Body >
 
+                {props.loading? 
 
-                <div style={{maxWidth: '1000px', margin: '0 auto'}}>
-
-                    <Modal.Header className="border border-0" closeButton>
-                        <h3 className="title">Конструктор</h3>
-                    </Modal.Header>
-
-
-                    <Form.Label>Оберить тип виробу</Form.Label>
-                    <Form.Select value={constrType} aria-label="Select" onChange={(e)=> {setConstrType(e.target.value); setConstrTypeUA(e.target.selectedOptions[0].text)}}>
-                        <option value="default" disabled >Виберіть опцію</option>
-                        <option value="armchairs">крісло</option>
-                        {/* <option value="tables">стіл</option> */}
-                    </Form.Select>
-
-
-
-                    {constrType !== 'default' ?
-                        <>
-                            <div className='constr_container' >
-                                <ColorLine title={'тип дерева'} setSmth={setConstrWood} setSmthUA={setConstrWoodUA} array={dataWood}/>
-                                <div className='img' style={{width: '40%'}}>  
-                                    {constrImg ? <img className='constr_img' src={constrImg} alt="" /> : null}
-                                </div>
-                                {
-                                    constrType === 'armchairs'? <ColorLine title={'тип подушки'} setSmth={setConstrFabric} setSmthUA={setConstrFabricUA} array={dataFabric}/> : <div></div>
-                                }
-                            </div> 
-
-                            {(constrWood && constrFabric && constrType === 'armchairs') || (constrWood && constrType === 'tables') ? 
-                                <div className='footer'>
-                                    <div className="summ">{summ}</div>
-                                    <div>
-                                        <Link to={`catalog/${constrType}/${constrId}`}>
-                                            <Button  action={handleClose} text="Переглянути товар"/>
-                                        </Link>
-                                    </div>
-                                </div>
-                                :
-                                null
-                            }
-                        </>
+                    <div style={{textAlign: 'center'}}>
+                        <Spinner animation="border" role="status" >
+                            <span className="visually-hidden">Loading...</span>
+                        </Spinner>
+                    </div>
                         : 
-                        null
-                    }
-                </div>
+                        
+                        props.error? <h5>{'Вибачте, сталася помилка :('}</h5> : 
+
+
+                    <div style={{maxWidth: '1000px', margin: '0 auto'}}>
+
+                        <Modal.Header className="border border-0" closeButton>
+                            <h3 className="title">Конструктор</h3>
+                        </Modal.Header>
+
+
+                        <Form.Label>Оберить тип виробу</Form.Label>
+                        <Form.Select value={constrType} aria-label="Select" onChange={(e)=> {setConstrType(e.target.value); setConstrTypeUA(e.target.selectedOptions[0].text)}}>
+                            <option value="default" disabled >Виберіть опцію</option>
+                            <option value="armchairs">крісло</option>
+                            {/* <option value="tables">стіл</option> */}
+                        </Form.Select>
+
+
+
+                        {constrType !== 'default' ?
+                            <>
+                                <div className='constr_container' >
+                                    <ColorLine title={'тип дерева'} setSmth={setConstrWood} setSmthUA={setConstrWoodUA} array={dataWood}/>
+                                    <div className='img' style={{width: '40%'}}>  
+                                        {constrImg ? <img className='constr_img' src={constrImg} alt="" /> : null}
+                                    </div>
+                                    {
+                                        constrType === 'armchairs'? <ColorLine title={'тип подушки'} setSmth={setConstrFabric} setSmthUA={setConstrFabricUA} array={dataFabric}/> : <div></div>
+                                    }
+                                </div> 
+
+                                {(constrWood && constrFabric && constrType === 'armchairs') || (constrWood && constrType === 'tables') ? 
+                                    <div className='footer'>
+                                        <div className="summ">{summ}</div>
+                                        <div>
+                                            <Link to={`catalog/${constrType}/${constrId}`}>
+                                                <Button  action={handleClose} text="Переглянути товар"/>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    :
+                                    null
+                                }
+                            </>
+                            : 
+                            null
+                        }
+                    </div>
+                }
             </Modal.Body>
         </Modal>
     )
