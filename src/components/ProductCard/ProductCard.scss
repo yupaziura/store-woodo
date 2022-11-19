@@ -28,8 +28,14 @@
         flex-direction: column;
         justify-content: space-between;
 
+        text-decoration: none;
+        a{
+            text-decoration: none;  
+        }
+
         .card_dataText {
             padding: 20px 20px 0 20px;
+            color: #212529;
         }
         
 
