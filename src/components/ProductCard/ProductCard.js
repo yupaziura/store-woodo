@@ -21,19 +21,21 @@ const ProductCard = ({item, type, setRootId, num, img}) => {
                         <Slider item={item} type={type}  />
                     </div>
                     <div className="card_data">
-                        <div className="card_dataText">
-                            <h4 className="card_title">{item.name}</h4>
-                            {item.discount? 
-                                <>
-                                    <p className="card_text card_price card_price_old"><i>{`${item.price} ₴`}</i></p>
-                                    <p className="card_text card_price card_price_new"><b>{`${item.discountPrice} ₴`}</b></p>
-                                </>
-                                : 
-                                <p className="card_text card_price"><i>{`${item.price} ₴`}</i></p>
-                            }
-                            
-                            <p className="card_text card_descr">{item.descr}</p>
-                        </div>
+                        <Link  onClick={()=>setRootId(num)} to={`/catalog/${type}/${item.id}`}>
+                            <div className="card_dataText">
+                                <h4 className="card_title">{item.name}</h4>
+                                {item.discount? 
+                                    <>
+                                        <p className="card_text card_price card_price_old"><i>{`${item.price} ₴`}</i></p>
+                                        <p className="card_text card_price card_price_new"><b>{`${item.discountPrice} ₴`}</b></p>
+                                    </>
+                                    : 
+                                    <p className="card_text card_price"><i>{`${item.price} ₴`}</i></p>
+                                }
+                                
+                                <p className="card_text card_descr">{item.descr}</p>
+                            </div>
+                        </Link>
                         
                         <div className="card_navigation">
                             
