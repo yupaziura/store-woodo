@@ -3,11 +3,6 @@ import { useHttp } from "../hooks/https.hook";
 const useHvojaService = () => {
     const {loading, request, error, clearError} = useHttp();
 
-    // const _apiBase = 'https://gateway.marvel.com:443/v1/public/characters';
-    // const _apiBaseComics = 'https://gateway.marvel.com:443/v1/public/comics';
-    // const _apiKey = 'apikey=cba563d54dbd68868980b1b6a1c84860';
-    // const _basicOffset = 210;
-    // const _comicsOffset = 0;
 
     const getArmchairs = async () => {
         const res = await request ('tblvDPFY3d3aYYysw');
