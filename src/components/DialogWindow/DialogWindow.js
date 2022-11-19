@@ -63,7 +63,7 @@ const DialogWindow = (props) => {
             return item.type === matcher
         })
         setConstrId(filteredItem ? filteredItem[0]?.id : null)
-        setConstrImg(filteredItem ? filteredItem[0]?.imgArr[1].url : null)
+        setConstrImg(filteredItem ? filteredItem[0]?.imgArr[0].url : null)
     }, [constrType,constrWood, constrFabric, data]);
 
 
