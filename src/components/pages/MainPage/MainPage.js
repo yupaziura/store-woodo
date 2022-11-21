@@ -1,4 +1,5 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import {Helmet} from "react-helmet-async";
 
 import CustomButton from '../../Button/Button';
 
@@ -18,6 +19,15 @@ const MainPage = ({setShow}) => {
 
     return (
         <>
+
+            <Helmet>
+                <meta
+                    name="description"
+                    content="Main page"
+                />
+                <title>Hvoja</title>
+            </Helmet>
+
             <div className="main_page">
                 <div className="headers">
                     <h1>
@@ -33,10 +43,6 @@ const MainPage = ({setShow}) => {
                     <CustomButton text='конструктор' action={actionConstructor}/>
                 </div>
             </div>
-{/* 
-            <div className="">
-                <Promotion/>
-            </div> */}
         </>
     )
 }
