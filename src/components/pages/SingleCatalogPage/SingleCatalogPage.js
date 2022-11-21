@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {Helmet} from "react-helmet-async";
 
 import ProductCard from "../../ProductCard/ProductCard";
 import { Spinner } from "react-bootstrap";
@@ -19,34 +20,44 @@ const SingleCatalogPage = (props) => {
     }
 
 
-    useEffect(() => {onRequest()}, [props.typeName])
+    useEffect(() => {onRequest()}, [props.typeName]);
 
 
 
     return (
-        <div className="single_catalog_container">
-            <h3 className="single_catalog_title">{props.typeName}</h3>
+        <>
+            <Helmet>
+                <meta
+                    name="description"
+                    content="Catalog"
+                />
+                <title>Каталог</title>
+            </Helmet>
 
-            {props.loading? 
+            <div className="single_catalog_container">
+                <h3 className="single_catalog_title">{props.typeName}</h3>
 
-            <div style={{textAlign: 'center'}}>
-                <Spinner animation="border" role="status" >
-                    <span className="visually-hidden">Loading...</span>
-                </Spinner>
-            </div>
-                 : 
-                
-                props.error? <h5>{'Вибачте, сталася помилка :('}</h5> : 
+                {props.loading? 
 
-                <div className="single_catalog">
-
-                    {data.map((item, i) => {
-                        return <ProductCard setRootId={props.setRootId}  key={item.id} item={item} type={props.type} num={i}/>
-                    })}
+                <div style={{textAlign: 'center'}}>
+                    <Spinner animation="border" role="status" >
+                        <span className="visually-hidden">Loading...</span>
+                    </Spinner>
                 </div>
-            }
+                    : 
+                    
+                    props.error? <h5>{'Вибачте, сталася помилка :('}</h5> : 
 
-        </div>
+                    <div className="single_catalog">
+
+                        {data.map((item, i) => {
+                            return <ProductCard setRootId={props.setRootId}  key={item.id} item={item} type={props.type} num={i}/>
+                        })}
+                    </div>
+                }
+
+            </div>
+        </>
     )
 }
 

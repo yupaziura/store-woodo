@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { Helmet } from 'react-helmet-async';
 
 import CustomButton from "../../Button/Button";
 import Modal from 'react-bootstrap/Modal';
@@ -63,6 +64,14 @@ const SingleProductPage = ({rootType, rootId, getArmchairs, getTables, getAccess
 
     return (
         <>
+            <Helmet>
+                <meta
+                    name="description"
+                    content="Item page"
+                />
+                <title>{ 'Обраний товар' }</title>
+            </Helmet>
+
             <div className="prod_page_container">
 
                 <Modal show={show} onHide={handleClose} size='lg'>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import {Helmet} from "react-helmet-async";
 
 import { Spinner } from "react-bootstrap";
 import ProductCard from '../../ProductCard/ProductCard';
@@ -63,6 +64,14 @@ const Promotion = (props) => {
 
     return (
         <>
+            <Helmet>
+                <meta
+                    name="description"
+                    content="Promotions"
+                />
+                <title>Акції</title>
+            </Helmet>
+
             <div className="container">
 
                 <div className="promo_card">
