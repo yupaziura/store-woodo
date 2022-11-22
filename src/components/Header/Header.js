@@ -81,7 +81,7 @@ const Header = (props) => {
                                 </Nav.Item>
 
                                 <Nav.Item className='me-3 mt-3' onClick={toggleBar}>
-                                    <LinkContainer to="/promotion"  >
+                                    <LinkContainer to="/discount"  >
                                         <Nav.Link style={{alignSelf: 'center'}}>
                                             <Nav.Item >
                                                 Акції
@@ -89,6 +89,18 @@ const Header = (props) => {
                                         </Nav.Link>
                                     </LinkContainer>
                                 </Nav.Item>
+
+                                <Nav.Item className='me-3 mt-3' onClick={toggleBar}>
+                                    <LinkContainer to="/promotion"  >
+                                        <Nav.Link style={{alignSelf: 'center'}}>
+                                            <Nav.Item >
+                                                <img src={require('../../img/icons/black_friday.png')} alt="" />
+                                            </Nav.Item>
+                                        </Nav.Link>
+                                    </LinkContainer>
+                                </Nav.Item>
+
+
                                     
                                 <Nav.Link>  
                                     <Nav.Item>

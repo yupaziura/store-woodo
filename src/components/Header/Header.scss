@@ -9,3 +9,11 @@
 #collasible-nav-dropdown {
     color: rgba(0,0,0,.55);  
 }
+
+img{
+    width: 35px;
+    transition: all 0.2s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
