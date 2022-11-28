@@ -2,7 +2,7 @@ import './Proposal.scss';
 
 const Proposal = () => {
     // const text = '20% від замовлення передаємо на ЗСУ,'.repeat(3).split(',');
-    const text = '20% від замовлення передаємо на ЗСУ 🇺🇦';
+    const text = '10% від замовлення передаємо на ЗСУ 🇺🇦';
 
     return (
         <>
