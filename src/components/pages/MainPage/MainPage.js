@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import {Helmet} from "react-helmet-async";
 
 import CustomButton from '../../Button/Button';
+import Proposal from '../../Donate/Proposal';
 
 import './MainPage.scss';
 
@@ -29,6 +30,7 @@ const MainPage = ({setShow}) => {
             </Helmet>
 
             <div className="main_page">
+                <Proposal/>
                 <div className="headers">
                     <h1>
                         hvoja

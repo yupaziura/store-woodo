@@ -13,9 +13,15 @@
 
     .single_catalog {
         display: flex;
-        justify-content: space-evenly;
+        justify-content:center;
         flex-wrap: wrap;
         margin: 0 auto;
+        gap: 15px;
+    }
+
+    .single_catalog_page{
+        display: flex;
+        justify-content: space-between;
     }
     
 }

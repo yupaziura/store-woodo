@@ -1,0 +1,87 @@
+.proposal_container {
+    width: 100%;
+    height: 50px;
+    background-color: #62744b;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+
+    // &::after {
+    //     content: '';
+    //     display: block;
+    //     width: 100%;
+    //     height: 50%;
+    //     transform: translateY(-25px);
+    //     background-color:rgb(205, 205, 60);
+    //     z-index: 5;
+    // }
+
+
+    .proposal_text {
+        position: relative;
+
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bolder;
+
+    //     /* animation properties */
+    //     -moz-transform: translateX(100%);
+    //     -webkit-transform: translateX(100%);
+    //     transform: translateX(100%);
+        
+    //     -moz-animation: my-animation 15s linear infinite;
+    //     -webkit-animation: my-animation 15s linear infinite;
+    //     animation: my-animation 15s linear infinite;
+
+    //     .proposal_item{ 
+    //         margin: 0 60px;
+    //         display: inline;
+    //         width: fit-content;
+    //     }
+    //   }
+      
+    //   /* for Firefox */
+    //   @-moz-keyframes my-animation {
+    //     from { -moz-transform: translateX(100%); }
+    //     to { -moz-transform: translateX(-100%); }
+    //   }
+      
+    //   /* for Chrome */
+    //   @-webkit-keyframes my-animation {
+    //     from { -webkit-transform: translateX(100%); }
+    //     to { -webkit-transform: translateX(-100%); }
+    //   }
+      
+    //   @keyframes my-animation {
+    //     from {
+    //       -moz-transform: translateX(100%);
+    //       -webkit-transform: translateX(100%);
+    //       transform: translateX(100%);
+    //     }
+    //     to {
+    //       -moz-transform: translateX(-100%);
+    //       -webkit-transform: translateX(-100%);
+    //       transform: translateX(-100%);
+    //     }
+    }
+}
+
+@media (max-width: 992px) {
+    .proposal_container{
+        .proposal_text {
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+@media (max-width: 375px) {
+    .proposal_container{
+        .proposal_text {
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+}
+
