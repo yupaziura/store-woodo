@@ -12,7 +12,7 @@ const PromotionSpecial = (props) => {
   const [minutes, setMinutes] = useState('00');
   const [seconds, setSeconds] = useState('00');
 
-  const deadline = "November, 31, 2022";
+  const deadline = "December, 10, 2022";
 
     function checkNum(num) {
 
@@ -73,8 +73,8 @@ const PromotionSpecial = (props) => {
                     <h2 className='promo_title'>BLACK FRIDAY</h2>
                     <div className="promo_wrapper">
                         <div className="promo_text">
-                            <h2 className='promo_header'>Акція діє до 31.11.22</h2>
-                            <p className='promo-descr'>Знижки до -50%!</p>
+                            <h2 className='promo_header'>Знижки продовжуються!</h2>
+                            <p className='promo-descr'>до -50%!</p>
                         </div>
 
                         <div className="promo_timer">
