@@ -1,6 +1,6 @@
 
 .single_catalog_container {
-    max-width: 1000px;
+    max-width: 900px;
     margin-top: 50px;
     margin: 0 auto;
 
@@ -13,10 +13,10 @@
 
     .single_catalog {
         display: flex;
-        // justify-content: space-evenly;
+        justify-content:center;
         flex-wrap: wrap;
         margin: 0 auto;
-        gap: 10px;
+        gap: 15px;
     }
 
     .single_catalog_page{

@@ -70,14 +70,14 @@ const SingleCatalogPage = (props) => {
                     props.error? <h5>{'Вибачте, сталася помилка :('}</h5> : 
 
                     <div >
-                        <Sort setType={setType}/>
+                        {/* <Sort setType={setType}/> */}
                         <div className="single_catalog_page">
                             <div className="single_catalog">
                                 {data.sort(sortPrice).map((item, i) => {
                                     return <ProductCard setRootId={props.setRootId}  key={item.id} item={item} type={props.type} num={i}/>
                                 })}
                             </div>
-                            <Filter/>
+                            {/* <Filter/> */}
                         </div>
                     </div>
                 }
