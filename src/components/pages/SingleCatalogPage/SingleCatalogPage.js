@@ -4,6 +4,7 @@ import {Helmet} from "react-helmet-async";
 import ProductCard from "../../ProductCard/ProductCard";
 import { Spinner } from "react-bootstrap";
 import Sort from '../../Sort/Sort';
+import Filter from '../../Filter/Filter';
 
 import './SingleCatalogPage.scss';
 
@@ -69,13 +70,15 @@ const SingleCatalogPage = (props) => {
                     props.error? <h5>{'Вибачте, сталася помилка :('}</h5> : 
 
                     <div >
-                    <Sort setType={setType}/>
-                        <div className="single_catalog">
-                            {data.sort(sortPrice).map((item, i) => {
-                                return <ProductCard setRootId={props.setRootId}  key={item.id} item={item} type={props.type} num={i}/>
-                            })}
+                        <Sort setType={setType}/>
+                        <div className="single_catalog_page">
+                            <div className="single_catalog">
+                                {data.sort(sortPrice).map((item, i) => {
+                                    return <ProductCard setRootId={props.setRootId}  key={item.id} item={item} type={props.type} num={i}/>
+                                })}
+                            </div>
+                            <Filter/>
                         </div>
-                        
                     </div>
                 }
 
