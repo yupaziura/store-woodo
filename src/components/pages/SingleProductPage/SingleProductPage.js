@@ -9,6 +9,7 @@ import Modal from 'react-bootstrap/Modal';
 import Slider from "../../Carusel/Carusel";
 import OrderForm from "../../Forms/OrderForm";
 import { Spinner } from "react-bootstrap";
+import Error from "../../Error/Error";
 
 import './SingleProductPage.scss';
 
@@ -93,7 +94,7 @@ const SingleProductPage = ({rootType, rootId, getArmchairs, getTables, getAccess
                     </div>
                         : 
                         
-                        error? <h5>{'Вибачте, сталася помилка :('}</h5> :
+                        error? <Error/> :
 
                     <div className="prod_container">
                         <div className="prod_img" >
