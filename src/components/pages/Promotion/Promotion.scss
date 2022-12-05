@@ -21,6 +21,23 @@
         outline: white dashed 1px;
     }
 
+    .promo_header_main {
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 90px;
+            height: 100%;
+        }
+
+        .promo_img_left{
+            transform: rotate(-25deg);
+        }
+
+        .promo_img_right{
+            transform: rotate(25deg);
+        }
+    }
+
     .promo_subtitle {
         font-size: 30px;
         font-weight: bolder;
@@ -97,23 +114,37 @@
 @media (max-width: 768px) {
     .container {
         max-width: 500px;
-
-
-
+        .promo_header_main {
+            img {
+                width: 70px;
+                height: 100%;
+            }
+        }
     }
 }
 
 @media (max-width: 574px) {
     .container {
         max-width: 420px;
-
-
+        .promo_header_main {
+            img {
+                width: 50px;
+                height: 100%;
+            }
+        }
     }
 }
 
 @media (max-width: 425px) {
     .container {
         max-width: 310px;
+
+        .promo_header_main {
+            h2{
+                font-size: 25px;
+            }
+        }
+
         .promo_wrapper {
 
                 .promo_timer {

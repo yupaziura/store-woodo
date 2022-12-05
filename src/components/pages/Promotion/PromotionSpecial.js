@@ -71,7 +71,11 @@ const PromotionSpecial = (props) => {
             <div className="container">
 
                 <div className="promo_card">
-                    <h2 className='promo_title'>НОВОРІЧНІ ЗНИЖКИ </h2>
+                    <div className="promo_header_main">
+                        <img className='promo_img_left' src={require('../../../img/icons/xmas_omela.png')} alt="" />
+                        <h2 className='promo_title'>НОВОРІЧНІ ЗНИЖКИ </h2>
+                        <img className='promo_img_right' src={require('../../../img/icons/xmas_omela.png')} alt="" />
+                    </div>
                     
                     <div className="promo_wrapper">
                         <div className="promo_text">
