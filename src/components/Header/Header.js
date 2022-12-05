@@ -94,7 +94,7 @@ const Header = (props) => {
                                     <LinkContainer to="/promotion"  >
                                         <Nav.Link style={{alignSelf: 'center'}}>
                                             <Nav.Item >
-                                                <img src={require('../../img/icons/black_friday.png')} alt="" />
+                                                <img src={require('../../img/icons/xmas.png')} alt="" />
                                             </Nav.Item>
                                         </Nav.Link>
                                     </LinkContainer>

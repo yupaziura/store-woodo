@@ -5,6 +5,7 @@ import ProductCard from "../../ProductCard/ProductCard";
 import { Spinner } from "react-bootstrap";
 import Sort from '../../Sort/Sort';
 import Filter from '../../Filter/Filter';
+import Error from "../../Error/Error";
 
 import './SingleCatalogPage.scss';
 
@@ -67,7 +68,7 @@ const SingleCatalogPage = (props) => {
                 </div>
                     : 
                     
-                    props.error? <h5>{'Вибачте, сталася помилка :('}</h5> : 
+                    props.error? <Error/> : 
 
                     <div >
                         {/* <Sort setType={setType}/> */}
