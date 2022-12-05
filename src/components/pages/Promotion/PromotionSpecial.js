@@ -3,6 +3,7 @@ import {Helmet} from "react-helmet-async";
 
 import { Spinner } from "react-bootstrap";
 import ProductCard from '../../ProductCard/ProductCard';
+import Error from '../../Error/Error';
 
 import './Promotion.scss';
 
@@ -12,7 +13,7 @@ const PromotionSpecial = (props) => {
   const [minutes, setMinutes] = useState('00');
   const [seconds, setSeconds] = useState('00');
 
-  const deadline = "December, 10, 2022";
+  const deadline = "January, 1, 2023";
 
     function checkNum(num) {
 
@@ -70,11 +71,16 @@ const PromotionSpecial = (props) => {
             <div className="container">
 
                 <div className="promo_card">
-                    <h2 className='promo_title'>BLACK FRIDAY</h2>
+                    <div className="promo_header_main">
+                        <img className='promo_img_left' src={require('../../../img/icons/xmas_omela.png')} alt="" />
+                        <h2 className='promo_title'>НОВОРІЧНІ ЗНИЖКИ </h2>
+                        <img className='promo_img_right' src={require('../../../img/icons/xmas_omela.png')} alt="" />
+                    </div>
+                    
                     <div className="promo_wrapper">
                         <div className="promo_text">
-                            <h2 className='promo_header'>Знижки продовжуються!</h2>
-                            <p className='promo-descr'>до -50%!</p>
+                            <h2 className='promo_header'>до -50%</h2>
+                            <p className='promo-descr'>затишок та комфорт у подарунок</p>
                         </div>
 
                         <div className="promo_timer">
@@ -95,6 +101,10 @@ const PromotionSpecial = (props) => {
                                 <div  className='timer_descr' style={{textAlign: 'center'}}>секунди</div>
                             </div>
                         </div>
+
+                        {/* <div className="" style={{width: '90px'}}>
+                            <img style={{width: '100%'}} src={require('../../../img/icons/xmas_tree.png')} alt="" />
+                        </div> */}
                     </div>
                 </div>
 
@@ -109,7 +119,7 @@ const PromotionSpecial = (props) => {
                     </div>
                         : 
     
-                    props.error? <h5>{'Вибачте, сталася помилка :('}</h5> : 
+                    props.error? <Error/> : 
 
                     <div className="promo_items">
                         {data.filter(item => {

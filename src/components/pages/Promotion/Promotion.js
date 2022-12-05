@@ -3,6 +3,7 @@ import {Helmet} from "react-helmet-async";
 
 import { Spinner } from "react-bootstrap";
 import ProductCard from '../../ProductCard/ProductCard';
+import Error from '../../Error/Error';
 
 
 
@@ -48,7 +49,7 @@ const Promotion = (props) => {
                     </div>
                         : 
     
-                    props.error? <h5>{'Вибачте, сталася помилка :('}</h5> : 
+                    props.error? <Error/> : 
 
                     <div className="promo_items">
                         {data.filter(item => {

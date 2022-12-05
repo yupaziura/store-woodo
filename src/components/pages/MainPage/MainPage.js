@@ -24,9 +24,10 @@ const MainPage = ({setShow}) => {
             <Helmet>
                 <meta
                     name="description"
-                    content="Main page"
+                    content="Hvoja - інтернет магазин меблів та аксесуарів з дерева. Даруємо затишок та комфорт. Використовуємо натуральні матеріали."
                 />
-                <title>Hvoja</title>
+                <meta name="keywords" content="меблі, дерево, крісла, підставки, магазин меблів"/>
+                <title>Hvoja - інтернет магазин меблів</title>
             </Helmet>
 
             <div className="main_page">

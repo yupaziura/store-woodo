@@ -1,5 +1,7 @@
 import {Helmet} from "react-helmet-async";
 
+import Error from "../../Error/Error";
+
 
 const ErrorPage = () => {
     return (
@@ -11,7 +13,7 @@ const ErrorPage = () => {
                 />
                 <title>Меню</title>
             </Helmet>
-        Error
+        <Error/>
         </>
     )
 }

@@ -9,6 +9,7 @@ import {ReactComponent as ReactLogo} from '../../img/logo.svg';
 import CustomButton from '../Button/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import SocialMedia from '../SocialMedia/SocialMedia';
+import Lights from '../XmasLights/XmasLights';
 
 import './Header.scss';
 
@@ -33,7 +34,7 @@ const Header = (props) => {
     const expand = 'lg';
     return (
         <>
-            <Navbar bg="light" variant="light" collapseOnSelect expand={`${expand}`}>
+            <Navbar className='margin_nav' bg="light" variant="light" collapseOnSelect expand={`${expand}`}>
                 <Container fluid={expand}>
                     <LinkContainer to="/">
                         <Navbar.Brand>
@@ -94,7 +95,7 @@ const Header = (props) => {
                                     <LinkContainer to="/promotion"  >
                                         <Nav.Link style={{alignSelf: 'center'}}>
                                             <Nav.Item >
-                                                <img src={require('../../img/icons/black_friday.png')} alt="" />
+                                                <img src={require('../../img/icons/xmas.png')} alt="" />
                                             </Nav.Item>
                                         </Nav.Link>
                                     </LinkContainer>
@@ -121,6 +122,7 @@ const Header = (props) => {
 
                 </Container>
             </Navbar>
+            <Lights/>
         </>
     )
 }

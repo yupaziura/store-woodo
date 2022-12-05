@@ -7,6 +7,7 @@ import ColorLine from '../ColorLine/ColorLine';
 import Form from 'react-bootstrap/Form';
 import Button from '../Button/Button';
 import { Spinner } from 'react-bootstrap';
+import Error from '../Error/Error';
 
 
 import './DialogWindow.scss';
@@ -84,7 +85,7 @@ const DialogWindow = (props) => {
                     </div>
                         : 
                         
-                        props.error? <h5>{'Вибачте, сталася помилка :('}</h5> : 
+                       
 
 
                     <div style={{maxWidth: '1000px', margin: '0 auto'}}>
@@ -93,44 +94,48 @@ const DialogWindow = (props) => {
                             <h3 className="title">Конструктор</h3>
                         </Modal.Header>
 
+                        
+                        {props.error? <div onClick={handleClose}><Error/></div> :
+                            <div> 
+                                <Form.Label>Оберить тип виробу</Form.Label>
+                                <Form.Select value={constrType} aria-label="Select" onChange={(e)=> {setConstrType(e.target.value); setConstrTypeUA(e.target.selectedOptions[0].text)}}>
+                                    <option value="default" disabled >Виберіть опцію</option>
+                                    <option value="armchairs">крісло</option>
+                                    {/* <option value="tables">стіл</option> */}
+                                </Form.Select>
 
-                        <Form.Label>Оберить тип виробу</Form.Label>
-                        <Form.Select value={constrType} aria-label="Select" onChange={(e)=> {setConstrType(e.target.value); setConstrTypeUA(e.target.selectedOptions[0].text)}}>
-                            <option value="default" disabled >Виберіть опцію</option>
-                            <option value="armchairs">крісло</option>
-                            {/* <option value="tables">стіл</option> */}
-                        </Form.Select>
 
 
+                                {constrType !== 'default' ?
+                                    <>
+                                        <div className='constr_container' >
+                                            <ColorLine title={'тип дерева'} setSmth={setConstrWood} setSmthUA={setConstrWoodUA} array={dataWood}/>
+                                            <div className='img' style={{width: '40%'}}>  
+                                                {constrImg ? <img className='constr_img' src={constrImg} alt="" /> : null}
+                                            </div>
+                                            {
+                                                constrType === 'armchairs'? <ColorLine title={'тип подушки'} setSmth={setConstrFabric} setSmthUA={setConstrFabricUA} array={dataFabric}/> : <div></div>
+                                            }
+                                        </div> 
 
-                        {constrType !== 'default' ?
-                            <>
-                                <div className='constr_container' >
-                                    <ColorLine title={'тип дерева'} setSmth={setConstrWood} setSmthUA={setConstrWoodUA} array={dataWood}/>
-                                    <div className='img' style={{width: '40%'}}>  
-                                        {constrImg ? <img className='constr_img' src={constrImg} alt="" /> : null}
-                                    </div>
-                                    {
-                                        constrType === 'armchairs'? <ColorLine title={'тип подушки'} setSmth={setConstrFabric} setSmthUA={setConstrFabricUA} array={dataFabric}/> : <div></div>
-                                    }
-                                </div> 
-
-                                {(constrWood && constrFabric && constrType === 'armchairs') || (constrWood && constrType === 'tables') ? 
-                                    <div className='footer'>
-                                        <div className="summ">{summ}</div>
-                                        <div>
-                                            <Link to={`catalog/${constrType}/${constrId}`}>
-                                                <Button  action={handleClose} text="Переглянути товар"/>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                    :
+                                        {(constrWood && constrFabric && constrType === 'armchairs') || (constrWood && constrType === 'tables') ? 
+                                            <div className='footer'>
+                                                <div className="summ">{summ}</div>
+                                                <div>
+                                                    <Link to={`catalog/${constrType}/${constrId}`}>
+                                                        <Button  action={handleClose} text="Переглянути товар"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                            :
+                                            null
+                                        }
+                                    </>
+                                    : 
                                     null
                                 }
-                            </>
-                            : 
-                            null
-                        }
+                                </div>
+                            }
                     </div>
                 }
             </Modal.Body>
