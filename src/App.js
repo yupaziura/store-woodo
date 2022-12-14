@@ -26,7 +26,7 @@ function App() {
   const [show, setShow] = useState(false);
 
 
- const {getArmchairs, getTables, getAccess, loading, error, getFabricArr, getWoodArr} = useHvojaService();
+ const {getArmchairs, getTables, getAccess, loading, error, getFabricArr, getWoodArr, getAllProducts} = useHvojaService();
 
 
 
@@ -62,7 +62,7 @@ function App() {
 
 
             <Route path='/discount' element={<Promotion getItem={getAccess} loading={loading} error={error} setRootId={setRootId} />}/>
-            <Route path='/promotion' element={<PromotionSpecial getItem={getArmchairs} loading={loading} error={error} setRootId={setRootId} />}/>
+            <Route path='/promotion' element={<PromotionSpecial getItem={getAllProducts} loading={loading} error={error} setRootId={setRootId} />}/>
 
             <Route path={`/catalog/:type/:id`} element={<SingleProductPage getArmchairs={getArmchairs} getTables={getTables} getAccess={getAccess} loading={loading} error={error} rootId={rootId} rootType={rootType} />}/>
           </Routes>
