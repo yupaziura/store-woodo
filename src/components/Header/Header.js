@@ -82,7 +82,7 @@ const Header = (props) => {
                                 </Nav.Item>
 
                                 <Nav.Item className='me-3 mt-3' onClick={toggleBar}>
-                                    <LinkContainer to="/discount"  >
+                                    <LinkContainer to="/promotion"  >
                                         <Nav.Link style={{alignSelf: 'center'}}>
                                             <Nav.Item >
                                                 Акції

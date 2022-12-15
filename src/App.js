@@ -61,7 +61,7 @@ function App() {
             <Route path='/catalog/accessoires' element={<SingleCatalogPage loading={loading} error={error} getItem={getAccess} setRootId={setRootId} type='accessoires'typeName='аксесуари'/>}/>
 
 
-            <Route path='/discount' element={<Promotion getItem={getAccess} loading={loading} error={error} setRootId={setRootId} />}/>
+            {/* <Route path='/discount' element={<Promotion getItem={getAccess} loading={loading} error={error} setRootId={setRootId} />}/> */}
             <Route path='/promotion' element={<PromotionSpecial getItem={getAllProducts} loading={loading} error={error} setRootId={setRootId} />}/>
 
             <Route path={`/catalog/:type/:id`} element={<SingleProductPage getArmchairs={getArmchairs} getTables={getTables} getAccess={getAccess} loading={loading} error={error} rootId={rootId} rootType={rootType} />}/>
