@@ -19,6 +19,15 @@ const useHvojaService = () => {
         return res.map(_transformData)
     }
 
+    const getAllProducts = async () => {
+        const arm = await request ('tblvDPFY3d3aYYysw');
+        const table = await request ('tbl6WrMPXtdSdCIfS');
+        const access = await request ('tblupOGjNvUKTnJz4');
+
+        const res = [...arm, ...table, ...access];
+        return res.map(_transformData);
+    }
+
     const getWoodArr = async () => {
         const res = await request ('tbl94GDZI8SH5wDhA');
         return res.map(_transformDataMaterials)
@@ -56,7 +65,7 @@ const useHvojaService = () => {
         }
    }
 
-    return {loading, error, clearError, getArmchairs, getTables, getAccess, getWoodArr, getFabricArr}
+    return {loading, error, clearError, getArmchairs, getTables, getAccess, getWoodArr, getFabricArr, getAllProducts}
 
 }
 

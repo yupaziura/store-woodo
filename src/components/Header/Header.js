@@ -61,7 +61,7 @@ const Header = (props) => {
                         <Offcanvas.Body>
                             <Nav className=" flex-grow-1 pe-3"  style={{alignItems: 'center'}}>
                                 
-                                <Nav.Item  className='me-3 mt-3' >
+                                <Nav.Item  className='me-3 ' >
                                     <NavDropdown  title="Каталог" id="collasible-nav-dropdown">
                                         <LinkContainer onClick={toggleBar} to="/catalog"><NavDropdown.Item>Каталог</NavDropdown.Item></LinkContainer>
                                         <NavDropdown.Divider />
@@ -71,7 +71,7 @@ const Header = (props) => {
                                     </NavDropdown>
                                 </Nav.Item>
 
-                                <Nav.Item className='me-3 mt-3' onClick={toggleBar}>
+                                <Nav.Item className='me-3 ' onClick={toggleBar}>
                                     <LinkContainer to="/contacts"  >
                                         <Nav.Link style={{alignSelf: 'center'}}>
                                             <Nav.Item >
@@ -81,21 +81,15 @@ const Header = (props) => {
                                     </LinkContainer>
                                 </Nav.Item>
 
-                                <Nav.Item className='me-3 mt-3' onClick={toggleBar}>
-                                    <LinkContainer to="/discount"  >
-                                        <Nav.Link style={{alignSelf: 'center'}}>
-                                            <Nav.Item >
-                                                Акції
-                                            </Nav.Item>
-                                        </Nav.Link>
-                                    </LinkContainer>
-                                </Nav.Item>
 
-                                <Nav.Item className='me-3 mt-3' onClick={toggleBar}>
+                                <Nav.Item className='me-3 ' onClick={toggleBar}>
                                     <LinkContainer to="/promotion"  >
                                         <Nav.Link style={{alignSelf: 'center'}}>
                                             <Nav.Item >
-                                                <img src={require('../../img/icons/xmas.png')} alt="" />
+                                                <div className="prom">
+                                                    Акції
+                                                    <img style={{height: '32px', width: 'auto', marginLeft: '10px'}} src={require('../../img/icons/xmas.png')} alt="" />
+                                                </div>
                                             </Nav.Item>
                                         </Nav.Link>
                                     </LinkContainer>
@@ -105,14 +99,14 @@ const Header = (props) => {
                                     
                                 <Nav.Link>  
                                     <Nav.Item>
-                                    <div className='mt-3'  style={{marginRight: 'auto'}}>
+                                    <div className=''  style={{marginRight: 'auto'}}>
                                         <CustomButton height={'40px'} padding={'5px 15px'} action={buttonAction} text={'конструктор'} color={'#adbb5b'}/>
                                     </div>
                                     </Nav.Item>
                                 </Nav.Link>
                             </Nav>
 
-                            <div className='mt-3' >
+                            <div className='' >
                                 <Nav.Item onClick={toggleBar}>
                                     <SocialMedia/>
                                 </Nav.Item>
