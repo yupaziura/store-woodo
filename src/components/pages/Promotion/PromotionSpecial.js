@@ -13,7 +13,7 @@ const PromotionSpecial = (props) => {
   const [minutes, setMinutes] = useState('00');
   const [seconds, setSeconds] = useState('00');
 
-  const deadline = "January, 1, 2023";
+  const deadline = "January, 30, 2023";
 
     function checkNum(num) {
 
